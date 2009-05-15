@@ -1,0 +1,33 @@
+  [4;36;1mSQL (0.000157)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000115)[0m   [0mBEGIN[0m
+  [4;36;1mProject Columns (0.001515)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Create (0.000381)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-05-14 00:01:12', '2009-05-14 00:01:12')[0m
+  [4;36;1mSQL (0.024930)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000183)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mProject Columns (0.001489)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Create (0.000346)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-05-14 00:01:57', '2009-05-14 00:01:57')[0m
+  [4;36;1mSQL (0.011086)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.000115)[0m   [0mBEGIN[0m
+  [4;36;1mProject Columns (0.001416)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Create (0.000523)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-05-14 00:57:03', '2009-05-14 00:57:03')[0m
+  [4;36;1mSQL (0.000529)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
