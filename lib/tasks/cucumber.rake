@@ -7,6 +7,9 @@ begin
     #t.t.cucumber_opts = %w{$1}--format pretty
     t.cucumber_opts = "--format pretty"
     #t.cucumber_opts = "--format pretty --language pt"
+    t.rcov = true
+    t.rcov_opts = %w{--rails --exclude osx\/objc,gems\/,spec\/,features\/}
+    #t.rcov_opts << %[-o "coverage"]
   end
   task :features => 'db:test:prepare'
 rescue LoadError

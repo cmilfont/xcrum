@@ -9,3 +9,13 @@ require 'rake/rdoctask'
 
 require 'tasks/rails'
 
+
+desc 'Executar Stories com cucumber'
+puts 'Executar Stories com cucumber'
+
+#Dir['lib/**/*.rake'].each { |rake| Rake::Task[:features].execute() }
+Rake::Task[:features].execute
+#namespace :rcov do
+#    Rake::Task[:all].execute
+#end
+
