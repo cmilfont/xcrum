@@ -1,0 +1,2 @@
+default: --format html --out=features_report.html features
+

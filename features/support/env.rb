@@ -16,23 +16,23 @@ end
 require 'cucumber/rails/rspec'
 require 'webrat/core/matchers'
 
-require 'firewatir'
-require 'spec'
+#require 'firewatir'
+#require 'spec'
 
-Before do
+#Before do
 
-    include Spec::Matchers
+    #include Spec::Matchers
 
-    Watir::Browser.default = "firefox"
+   # Watir::Browser.default = "firefox"
 
-    def browser
-        @browser ||= Watir::Browser.new
-    end
+   # def browser
+    #    @browser ||= Watir::Browser.new
+   # end
 
-end
+#end
 
-After do
-  @browser.close
-  @browser = nil
-end
+#After do
+  #@browser.close
+  #@browser = nil
+#end
 
