@@ -1,10 +1,10 @@
-Feature: Criar projeto
-    As a gerente de projetos
-    I want criar um projetos
-    So that eu possa gerencia-los
+Funcionalidade: Criar projeto
+    Como um gerente de projetos
+    Eu quero criar um projetos
+    Para que eu possa gerencia-los
 
-    Scenario: Criar um novo projeto
-        Given um projeto com nome Xcrum
-        When solicitar a criação de um projetos
-        Then que um projeto com o nome Xcrum exista
+    Cenário: Criar um novo projeto
+        Dado um projeto com nome Xcrum
+        Quando solicitar a criação de um projetos
+        Então que um projeto com o nome Xcrum exista
 

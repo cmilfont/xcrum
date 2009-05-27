@@ -5,7 +5,7 @@ begin
 
   Cucumber::Rake::Task.new(:features) do |t|
     #t.t.cucumber_opts = %w{$1}--format pretty
-    t.cucumber_opts = "--format pretty"
+    t.cucumber_opts = "--format pretty --language pt"
     #t.cucumber_opts = "--format pretty --language pt"
     t.rcov = true
     t.rcov_opts = %w{--rails --exclude osx\/objc,gems\/,spec\/,features\/}

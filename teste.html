@@ -1,0 +1,103 @@
+<html>
+<head></head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" language="javascript" type="text/javascript"></script>
+<script type="text/javascript" language="javascript" charset="utf-8">
+
+;(function($) {
+
+
+    var merge = function(el, cp) {
+		for(i in cp) {
+			if( typeof cp[i] == 'object') {
+				if(el[i] == undefined) {
+					el[i] = cp[i]
+				}
+				merge(el[i], cp[i]);
+			} else {
+				el[i] = cp[i];
+			}
+		}
+	};
+
+    var makeJsonFromText = function(id, value) {
+        var obj = id.split('.');
+        var objeto = {};
+        for(var t = obj.length; t > 0  ; t--) {
+            var temp = {};
+            var name = obj[t-1];
+            if(name == obj[obj.length-1]) {
+                temp[name] = value;
+            } else {
+                temp[name] = objeto;
+            }
+            objeto = temp;
+        }
+        return objeto;
+    };
+
+    $.fn.merge = merge;
+    $.fn.makeJsonFromText = makeJsonFromText;
+    $.fn.formJson = function(config) {
+        var id_form = $(this).attr('id');
+        var jsonBuilded = {};
+        $('#'+id_form+' :input').each(function(){
+            //a.push({name: $(this).attr('id'), value: $(this).val()});
+            //console.log($(this).attr('type') + ' - ' + $(this).val());
+            var id = $(this).attr('id');
+            var json = makeJsonFromText(id, $(this).val());
+            merge(jsonBuilded, json)
+        });
+        return jsonBuilded;
+    }
+
+})(jQuery);
+
+$(document).ready(function(){
+    $('#sub').click(function(){
+        console.log( $('#tee').formJson().toSource());
+        return false;
+    });
+});
+
+</script>
+
+
+<body>
+<form action="#" method="get" id="tee">
+    <label for="name">
+        Nome do json
+    </label>
+    <input type="text" id="name">
+    <input type="text" id="id">
+    <label for="name">
+        Nome do Gestor
+    </label>
+    <input type="text" id="gestor.name">
+    <input type="text" id="gestor.id">
+    <label for="name">
+        Nome da Empresa
+    </label>
+    <input type="text" id="gestor.empresa.name">
+    <input type="text" id="gestor.empresa.fundacao">
+
+    <input id="avatar_b" type="button" value="Input Button"/>
+    <input id="gestor.tipo" type="checkbox" />
+    <input id="gestor.curriculo" type="file" />
+    <input id="gestor.empresa.cnpj" value="1222993884874" type="hidden" />
+    <input id="avatar" type="image" />
+    <input id="senha" type="password" />
+    <input id="radio" type="radio" />
+    <input id="reset" type="reset" />
+    <select id="select"><option value="45">Option</option>  </select>
+    <textarea id="textarea"></textarea>
+    <button id="button">Button</button>
+
+    <p>
+    <input id="sub" type="submit" value="Continue &rarr;" />
+    </p>
+</form>
+
+</body>
+</html>
+
