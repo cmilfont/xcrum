@@ -2,7 +2,7 @@
 <html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
   <head>
     <title>
-      app/controllers/application.rb - C0 code coverage information
+      app/controllers/items_controller.rb - C0 code coverage information
     </title>
     <style type='text/css'>
       body { background-color: rgb(240, 240, 245); }
@@ -173,40 +173,111 @@
     class='heading'> Total lines </td> <td class='heading'> Lines of code </td>
     <td class='heading'> Total coverage </td> <td class='heading'> Code coverage
     </td> </tr> </thead> <tbody> <tr class='light'> <td> <a
-    href='app-controllers-application_rb.html'> app/controllers/application.rb
-    </a> </td> <td class='lines_total'> <tt> 15 </tt> </td> <td
-    class='lines_code'> <tt> 4 </tt> </td> <td> <table cellspacing='0'
-    align='right' cellpadding='0'> <tr> <td> <tt class='coverage_total'> 100.0%
-    </tt> &nbsp; </td> <td> <table class='percent_graph' cellspacing='0'
-    cellpadding='0' width='100'> <tr> <td class='covered' width='100' /> <td
-    class='uncovered' width='0' /> </tr> </table> </td> </tr> </table> </td>
-    <td> <table cellspacing='0' align='right' cellpadding='0'> <tr> <td> <tt
-    class='coverage_code'> 100.0% </tt> &nbsp; </td> <td> <table
+    href='app-controllers-items_controller_rb.html'>
+    app/controllers/items_controller.rb </a> </td> <td class='lines_total'> <tt>
+    85 </tt> </td> <td class='lines_code'> <tt> 60 </tt> </td> <td> <table
+    cellspacing='0' align='right' cellpadding='0'> <tr> <td> <tt
+    class='coverage_total'> 31.8% </tt> &nbsp; </td> <td> <table
     class='percent_graph' cellspacing='0' cellpadding='0' width='100'> <tr> <td
-    class='covered' width='100' /> <td class='uncovered' width='0' /> </tr>
-    </table> </td> </tr> </table> </td> </tr> </tbody> </table><pre><span
-    class="inferred1"><a name="line1"></a> 1 # Filters added to this controller
-    apply to all controllers in the application. </span><span
-    class="inferred0"><a name="line2"></a> 2 # Likewise, all the methods added
-    will be available for all controllers. </span><span class="inferred1"><a
-    name="line3"></a> 3 </span><span class="marked0"><a name="line4"></a> 4
-    class ApplicationController &lt; ActionController::Base </span><span
-    class="marked1"><a name="line5"></a> 5 helper :all # include all helpers,
-    all the time </span><span class="inferred0"><a name="line6"></a> 6
-    </span><span class="inferred1"><a name="line7"></a> 7 # See
-    ActionController::RequestForgeryProtection for details </span><span
-    class="inferred0"><a name="line8"></a> 8 # Uncomment the :secret if you're
-    not using the cookie session store </span><span class="marked1"><a
-    name="line9"></a> 9 protect_from_forgery # :secret =&gt;
-    'd8b9c742491ce868c956b5e3d2430f27' </span><span class="inferred0"><a
-    name="line10"></a>10 </span><span class="inferred1"><a name="line11"></a>11
-    # See ActionController::Base for details </span><span class="inferred0"><a
-    name="line12"></a>12 # Uncomment this to filter the contents of submitted
-    sensitive data parameters </span><span class="inferred1"><a
-    name="line13"></a>13 # from your application log (in this case, all fields
-    with names like &quot;password&quot;). </span><span class="inferred0"><a
-    name="line14"></a>14 # filter_parameter_logging :password </span><span
-    class="inferred1"><a name="line15"></a>15 end </span></pre>
+    class='covered' width='32' /> <td class='uncovered' width='68' /> </tr>
+    </table> </td> </tr> </table> </td> <td> <table cellspacing='0'
+    align='right' cellpadding='0'> <tr> <td> <tt class='coverage_code'> 13.3%
+    </tt> &nbsp; </td> <td> <table class='percent_graph' cellspacing='0'
+    cellpadding='0' width='100'> <tr> <td class='covered' width='13' /> <td
+    class='uncovered' width='87' /> </tr> </table> </td> </tr> </table> </td>
+    </tr> </tbody> </table><pre><span class="marked0"><a name="line1"></a> 1
+    class ItemsController &lt; ApplicationController </span><span
+    class="inferred1"><a name="line2"></a> 2 # GET /items </span><span
+    class="inferred0"><a name="line3"></a> 3 # GET /items.xml </span><span
+    class="marked1"><a name="line4"></a> 4 def index </span><span
+    class="uncovered0"><a name="line5"></a> 5 @items = Item.all </span><span
+    class="uncovered1"><a name="line6"></a> 6 </span><span class="uncovered0"><a
+    name="line7"></a> 7 respond_to do |format| </span><span
+    class="uncovered1"><a name="line8"></a> 8 format.html # index.html.erb
+    </span><span class="uncovered0"><a name="line9"></a> 9 format.xml { render
+    :xml =&gt; @items } </span><span class="uncovered1"><a name="line10"></a>10
+    end </span><span class="uncovered0"><a name="line11"></a>11 end </span><span
+    class="inferred1"><a name="line12"></a>12 </span><span class="inferred0"><a
+    name="line13"></a>13 # GET /items/1 </span><span class="inferred1"><a
+    name="line14"></a>14 # GET /items/1.xml </span><span class="marked0"><a
+    name="line15"></a>15 def show </span><span class="uncovered1"><a
+    name="line16"></a>16 @item = Item.find(params[:id]) </span><span
+    class="uncovered0"><a name="line17"></a>17 </span><span
+    class="uncovered1"><a name="line18"></a>18 respond_to do |format|
+    </span><span class="uncovered0"><a name="line19"></a>19 format.html #
+    show.html.erb </span><span class="uncovered1"><a name="line20"></a>20
+    format.xml { render :xml =&gt; @item } </span><span class="uncovered0"><a
+    name="line21"></a>21 end </span><span class="uncovered1"><a
+    name="line22"></a>22 end </span><span class="inferred0"><a
+    name="line23"></a>23 </span><span class="inferred1"><a name="line24"></a>24
+    # GET /items/new </span><span class="inferred0"><a name="line25"></a>25 #
+    GET /items/new.xml </span><span class="marked1"><a name="line26"></a>26 def
+    new </span><span class="uncovered0"><a name="line27"></a>27 @item = Item.new
+    </span><span class="uncovered1"><a name="line28"></a>28 </span><span
+    class="uncovered0"><a name="line29"></a>29 respond_to do |format|
+    </span><span class="uncovered1"><a name="line30"></a>30 format.html #
+    new.html.erb </span><span class="uncovered0"><a name="line31"></a>31
+    format.xml { render :xml =&gt; @item } </span><span class="uncovered1"><a
+    name="line32"></a>32 end </span><span class="uncovered0"><a
+    name="line33"></a>33 end </span><span class="inferred1"><a
+    name="line34"></a>34 </span><span class="inferred0"><a name="line35"></a>35
+    # GET /items/1/edit </span><span class="marked1"><a name="line36"></a>36 def
+    edit </span><span class="uncovered0"><a name="line37"></a>37 @item =
+    Item.find(params[:id]) </span><span class="uncovered1"><a
+    name="line38"></a>38 end </span><span class="inferred0"><a
+    name="line39"></a>39 </span><span class="inferred1"><a name="line40"></a>40
+    # POST /items </span><span class="inferred0"><a name="line41"></a>41 # POST
+    /items.xml </span><span class="marked1"><a name="line42"></a>42 def create
+    </span><span class="uncovered0"><a name="line43"></a>43 @item =
+    Item.new(params[:item]) </span><span class="uncovered1"><a
+    name="line44"></a>44 </span><span class="uncovered0"><a name="line45"></a>45
+    respond_to do |format| </span><span class="uncovered1"><a
+    name="line46"></a>46 if @item.save </span><span class="uncovered0"><a
+    name="line47"></a>47 flash[:notice] = 'Item was successfully created.'
+    </span><span class="uncovered1"><a name="line48"></a>48 format.html {
+    redirect_to(@item) } </span><span class="uncovered0"><a name="line49"></a>49
+    format.xml { render :xml =&gt; @item, :status =&gt; :created, :location
+    =&gt; @item } </span><span class="uncovered1"><a name="line50"></a>50 else
+    </span><span class="uncovered0"><a name="line51"></a>51 format.html { render
+    :action =&gt; &quot;new&quot; } </span><span class="uncovered1"><a
+    name="line52"></a>52 format.xml { render :xml =&gt; @item.errors, :status
+    =&gt; :unprocessable_entity } </span><span class="uncovered0"><a
+    name="line53"></a>53 end </span><span class="uncovered1"><a
+    name="line54"></a>54 end </span><span class="uncovered0"><a
+    name="line55"></a>55 end </span><span class="inferred1"><a
+    name="line56"></a>56 </span><span class="inferred0"><a name="line57"></a>57
+    # PUT /items/1 </span><span class="inferred1"><a name="line58"></a>58 # PUT
+    /items/1.xml </span><span class="marked0"><a name="line59"></a>59 def update
+    </span><span class="uncovered1"><a name="line60"></a>60 @item =
+    Item.find(params[:id]) </span><span class="uncovered0"><a
+    name="line61"></a>61 </span><span class="uncovered1"><a name="line62"></a>62
+    respond_to do |format| </span><span class="uncovered0"><a
+    name="line63"></a>63 if @item.update_attributes(params[:item]) </span><span
+    class="uncovered1"><a name="line64"></a>64 flash[:notice] = 'Item was
+    successfully updated.' </span><span class="uncovered0"><a
+    name="line65"></a>65 format.html { redirect_to(@item) } </span><span
+    class="uncovered1"><a name="line66"></a>66 format.xml { head :ok }
+    </span><span class="uncovered0"><a name="line67"></a>67 else </span><span
+    class="uncovered1"><a name="line68"></a>68 format.html { render :action
+    =&gt; &quot;edit&quot; } </span><span class="uncovered0"><a
+    name="line69"></a>69 format.xml { render :xml =&gt; @item.errors, :status
+    =&gt; :unprocessable_entity } </span><span class="uncovered1"><a
+    name="line70"></a>70 end </span><span class="uncovered0"><a
+    name="line71"></a>71 end </span><span class="uncovered1"><a
+    name="line72"></a>72 end </span><span class="inferred0"><a
+    name="line73"></a>73 </span><span class="inferred1"><a name="line74"></a>74
+    # DELETE /items/1 </span><span class="inferred0"><a name="line75"></a>75 #
+    DELETE /items/1.xml </span><span class="marked1"><a name="line76"></a>76 def
+    destroy </span><span class="uncovered0"><a name="line77"></a>77 @item =
+    Item.find(params[:id]) </span><span class="uncovered1"><a
+    name="line78"></a>78 @item.destroy </span><span class="uncovered0"><a
+    name="line79"></a>79 </span><span class="uncovered1"><a name="line80"></a>80
+    respond_to do |format| </span><span class="uncovered0"><a
+    name="line81"></a>81 format.html { redirect_to(items_url) } </span><span
+    class="uncovered1"><a name="line82"></a>82 format.xml { head :ok }
+    </span><span class="uncovered0"><a name="line83"></a>83 end </span><span
+    class="uncovered1"><a name="line84"></a>84 end </span><span
+    class="uncovered0"><a name="line85"></a>85 end </span></pre>
     <hr />
     <p> Generated using the <a href='http://eigenclass.org/hiki.rb?rcov'> rcov
     code coverage analysis tool for Ruby </a> version 0.8.1.2. </p>

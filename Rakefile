@@ -10,8 +10,8 @@ require 'rake/rdoctask'
 require 'tasks/rails'
 
 
-desc 'Executar Stories com cucumber'
-puts 'Executar Stories com cucumber'
+#desc 'Executar Stories com cucumber'
+#puts 'Executar Stories com cucumber'
 
-Rake::Task[:features].execute
+#Rake::Task[:features].execute
 
