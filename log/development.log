@@ -3900,3 +3900,173 @@ Migrating to CreateItems (20090603190217)
   [4;35;1mSQL (0.8ms)[0m   [0mSELECT version FROM `schema_migrations`[0m
   [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO `schema_migrations` (version) VALUES ('20090603190217')[0m
   [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO `schema_migrations` (version) VALUES ('20090513213438')[0m
+  [4;36;1mSQL (367.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-04 11:47:59) [GET]
+
+ActionController::RoutingError (No route matches "/pedidos" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (21.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-04 11:47:59) [GET]
+
+ActionController::RoutingError (No route matches "/clientes" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-04 11:48:11) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/projects_controller.rb:1
+
+Rendered rescues/_trace (143.7ms)
+Rendered rescues/_request_and_response (19.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-04 11:48:27) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/items_controller.rb:1
+
+Rendered rescues/_trace (149.3ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-04 12:05:12) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/items_controller.rb:1
+
+Rendered rescues/_trace (142.2ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2009-06-04 12:05:29) [GET]
+  [4;36;1mSQL (59.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (103.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Completed in 297ms (View: 16, DB: 163) | 200 OK [http://localhost/rails/info/properties]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-04 12:05:39) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/projects_controller.rb:1
+
+Rendered rescues/_trace (138.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#new (for 127.0.0.1 at 2009-06-04 12:08:09) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/projects_controller.rb:1
+
+Rendered rescues/_trace (111.2ms)
+Rendered rescues/_request_and_response (0.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ActionController::Base#index (for 127.0.0.1 at 2009-06-04 12:08:34) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/projects_controller.rb:1
+
+Rendered rescues/_trace (53.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-04 12:11:43) [GET]
+  [4;35;1mProject Load (167.5ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 289ms (View: 61, DB: 168) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-06-04 12:12:14) [GET]
+  [4;35;1mProject Columns (101.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/projects
+Rendering projects/new
+Completed in 161ms (View: 39, DB: 102) | 200 OK [http://localhost/projects/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2009-06-04 12:12:26) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"OqFoLFU1YWzQ1/Rg1r04HdB/jcd92/oRN1Zl9DEgMjE=", "project"=>{"name"=>"Projeto 1"}}
+  [4;35;1mProject Columns (19.3ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (73.0ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Projeto 1', '2009-06-04 15:12:26', '2009-06-04 15:12:26')[0m
+  [4;36;1mSQL (57.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/1
+Completed in 209ms (DB: 150) | 302 Found [http://localhost/projects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-06-04 12:12:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mProject Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (10.6ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 1) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 117ms (View: 18, DB: 12) | 200 OK [http://localhost/projects/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-04 12:12:30) [GET]
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;36;1mProject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 38ms (View: 14, DB: 4) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-06-04 12:16:28) [GET]
+  [4;36;1mItem Load (26.0ms)[0m   [0;1mSELECT * FROM `items` [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 97ms (View: 33, DB: 26) | 200 OK [http://localhost/items]
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ItemsController#new (for 127.0.0.1 at 2009-06-04 12:16:31) [GET]
+  [4;36;1mItem Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+Rendering template within layouts/items
+Rendering items/new
+Completed in 34ms (View: 23, DB: 2) | 200 OK [http://localhost/items/new]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ItemsController#index (for 127.0.0.1 at 2009-06-04 12:16:34) [GET]
+  [4;36;1mItem Load (0.4ms)[0m   [0;1mSELECT * FROM `items` [0m
+Rendering template within layouts/items
+Rendering items/index
+Completed in 41ms (View: 4, DB: 1) | 200 OK [http://localhost/items]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-04 12:16:39) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+  [4;35;1mProject Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 37ms (View: 14, DB: 4) | 200 OK [http://localhost/projects]

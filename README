@@ -1,2 +1,4 @@
 http://www.milfont.org
 
+rake gems:install RAILS_ENV=test
+
