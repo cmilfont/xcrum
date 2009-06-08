@@ -1,0 +1,4 @@
+tracker_github_hook:
+  github_url: 'http://github.com/cmilfont/xcrum'
+  tracker_api_token: e7e3a19fddb3167d2d6237e41b7505ca
+  tracker_project_id: 17569
