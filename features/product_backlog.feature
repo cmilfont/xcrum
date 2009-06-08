@@ -1,4 +1,4 @@
-Funcionalidade: Montar Product Backlog
+Feature: Montar Product Backlog
     Como um product owner
     Eu quero montar um product backlog
     Para que eu possa adicionar itens de negócio que eu desejo no produto
