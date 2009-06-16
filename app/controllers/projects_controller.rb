@@ -2,11 +2,18 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
   def index
-    @projects = Project.find(:all)
+    #ActiveRecord::Base.include_root_in_json = false
+    @projects = Project.find(:all, :offset => params[:start], :limit => params[:limit])
+    @dto = DataTransferObject.new
+    @dto.total = Project.count
+    @dto.results = @projects.to_a
 
     respond_to do |format|
+      format.json { render :layout => false,
+                           :json => @dto.to_json }
       format.html # index.html.erb
       format.xml  { render :xml => @projects }
+      #format.ext_json { render :json => @projects.to_ext_json(:class => :project, :count => Project.count) }
     end
   end
 
@@ -16,6 +23,7 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
 
     respond_to do |format|
+      format.json { render :json => @project.to_json }
       format.html # show.html.erb
       format.xml  { render :xml => @project }
     end
@@ -40,14 +48,20 @@ class ProjectsController < ApplicationController
   # POST /projects
   # POST /projects.xml
   def create
-    @project = Project.new(params[:project])
+    #ActiveRecord::Base.include_root_in_json = false
+    #@p = ActiveSupport::JSON.decode(params[:project])
+    @json = params[:project]
+    @project = Project.new(@json)
 
     respond_to do |format|
+
       if @project.save
         flash[:notice] = 'Project was successfully created.'
+        format.json { render :json => @project.to_json, :status => :created, :location => @project  }
         format.html { redirect_to(@project) }
         format.xml  { render :xml => @project, :status => :created, :location => @project }
       else
+        format.json { render :json => @project.errors, :status => :unprocessable_entity }
         format.html { render :action => "new" }
         format.xml  { render :xml => @project.errors, :status => :unprocessable_entity }
       end
@@ -78,6 +92,7 @@ class ProjectsController < ApplicationController
     @project.destroy
 
     respond_to do |format|
+      format.json { head :ok }
       format.html { redirect_to(projects_url) }
       format.xml  { head :ok }
     end

@@ -2,3 +2,6 @@ http://www.milfont.org
 
 rake gems:install RAILS_ENV=test
 
+Para funcionar o Firefox com o Selenium
+sudo ln -s /usr/lib/firefox-3.0.4/firefox /usr/bin/firefox-bin
+

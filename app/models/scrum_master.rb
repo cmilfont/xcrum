@@ -1,0 +1,3 @@
+class ScrumMaster < User
+
+end
