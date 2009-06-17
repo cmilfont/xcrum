@@ -1,3 +1,5 @@
+#require 'json/pure'
+
 class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
@@ -50,8 +52,22 @@ class ProjectsController < ApplicationController
   def create
     #ActiveRecord::Base.include_root_in_json = false
     #@p = ActiveSupport::JSON.decode(params[:project])
-    @json = params[:project]
-    @project = Project.new(@json)
+    #@t = request.env['RAW_POST_DATA']
+    #@json = params[:project]
+    #@p = JSON.parse(@t, opts = {
+    #  :max_nesting => 19,
+    #  :allow_nan => true
+    #})
+
+    items = params[:project].delete("items")
+    @project = Project.new(params[:project])
+
+    if items
+       items.each do |item|
+         @project.items << Item.new(item)
+            #@project.items.create(item)
+       end
+    end
 
     respond_to do |format|
 

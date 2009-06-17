@@ -5451,3 +5451,1174 @@ Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 09:40:5
   [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
   [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
 Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245156051205&start=0&limit=5]
+  [4;36;1mSQL (91.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 12:01:03) [GET]
+  [4;35;1mProject Load (260.9ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (135.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 549ms (View: 130, DB: 488) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 12:01:07) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245164467664", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 98ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245164467664&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 12:01:10) [GET]
+  Parameters: {"start"=>"5", "_dc"=>"1245164470364", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 19ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245164470364&start=5&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 12:31:18) [GET]
+  Parameters: {"start"=>"10", "_dc"=>"1245166278541", "limit"=>"5"}
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 35ms (View: 1, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245166278541&start=10&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 12:31:19) [GET]
+  Parameters: {"start"=>"15", "_dc"=>"1245166279693", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 22ms (View: 1, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245166279693&start=15&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 12:31:28) [GET]
+  Parameters: {"start"=>"10", "_dc"=>"1245166288132", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 26ms (View: 1, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245166288132&start=10&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 12:31:29) [GET]
+  Parameters: {"start"=>"5", "_dc"=>"1245166289402", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 18ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245166289402&start=5&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 12:31:30) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245166290186", "limit"=>"5"}
+  [4;36;1mProject Load (0.9ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 32ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245166290186&start=0&limit=5]
+  [4;36;1mSQL (13.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 15:52:50) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (27.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 191ms (View: 143, DB: 43) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 15:52:54) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245178374409", "limit"=>"5"}
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 51ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245178374409&start=0&limit=5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 15:53:08) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (23.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 90ms (View: 54, DB: 25) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 15:53:10) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245178390879", "limit"=>"5"}
+  [4;36;1mProject Load (1.1ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 61ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245178390879&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 15:53:16) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mSQL (10.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (172.3ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 18:53:46', '2009-06-16 18:53:46')[0m
+  [4;36;1mSQL (57.6ms)[0m   [0;1mCOMMIT[0m
+Completed in 30677ms (View: 4, DB: 241) | 201 Created [http://localhost/projects.json]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 15:54:42) [GET]
+  [4;35;1mProject Load (26.4ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mSQL (11.6ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 204ms (View: 158, DB: 38) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 15:54:45) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245178485646", "limit"=>"5"}
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 11ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245178485646&start=0&limit=5]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 15:55:54) [GET]
+  [4;35;1mProject Load (1.0ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 110ms (View: 100, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 15:55:55) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 104ms (View: 96, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 15:55:56) [GET]
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 56ms (View: 52, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 15:55:57) [GET]
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 155ms (View: 149, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 15:55:57) [GET]
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 61ms (View: 54, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 15:55:59) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245178559242", "limit"=>"5"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245178559242&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 15:56:29) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+ActiveRecord::AssociationTypeMismatch (Item(#-615714898) expected, got HashWithIndifferentAccess(#-611028448)):
+  app/controllers/projects_controller.rb:54:in `new'
+  app/controllers/projects_controller.rb:54:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (241.5ms)
+Rendered rescues/_request_and_response (16.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:01:46) [GET]
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 183ms (View: 152, DB: 5) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:01:50) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245178910160", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 200ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245178910160&start=0&limit=5]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:02:01) [GET]
+  [4;36;1mProject Load (1.8ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 143ms (View: 131, DB: 2) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:02:03) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245178923829", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 11ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245178923829&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 16:02:15) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+ActiveRecord::AssociationTypeMismatch (Item(#-616332548) expected, got HashWithIndifferentAccess(#-611293248)):
+  app/controllers/projects_controller.rb:54:in `new'
+  app/controllers/projects_controller.rb:54:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (520.1ms)
+Rendered rescues/_request_and_response (7.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:04:28) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 227ms (View: 197, DB: 4) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:04:30) [GET]
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 213ms (View: 208, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:04:33) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245179073104", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 53ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245179073104&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 16:04:34) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (19.0ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 19:05:00', '2009-06-16 19:05:00')[0m
+  [4;36;1mSQL (45.5ms)[0m   [0;1mCOMMIT[0m
+Completed in 26010ms (View: 7, DB: 65) | 201 Created [http://localhost/projects.json]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:05:01) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245179100811", "limit"=>"5"}
+  [4;35;1mProject Load (32.5ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 52ms (View: 0, DB: 33) | 200 OK [http://localhost/projects.json?_dc=1245179100811&start=0&limit=5]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:05:42) [GET]
+  [4;35;1mProject Load (1.2ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 172ms (View: 144, DB: 5) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:05:44) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245179144908", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 189379ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245179144908&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 16:09:09) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mSQL (2.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.8ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 19:09:37', '2009-06-16 19:09:37')[0m
+  [4;36;1mSQL (2.1ms)[0m   [0;1mCOMMIT[0m
+Completed in 29110ms (View: 2, DB: 5) | 201 Created [http://localhost/projects.json]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:09:39) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245179379491", "limit"=>"5"}
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4718ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245179379491&start=0&limit=5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:18:17) [GET]
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 77ms (View: 63, DB: 2) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:18:20) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245179900082", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6972ms (View: 1, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245179900082&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 16:18:34) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+TypeError (can't convert HashWithIndifferentAccess into String):
+  app/controllers/projects_controller.rb:52:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (451.9ms)
+Rendered rescues/_request_and_response (7.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:24:06) [GET]
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (46.1ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 248ms (View: 170, DB: 48) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:24:09) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245180249112", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6762ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245180249112&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 16:24:26) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mSQL (24.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (271.7ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 19:27:20', '2009-06-16 19:27:20')[0m
+  [4;36;1mSQL (67.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 179395ms (View: 4, DB: 364) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:28:38) [GET]
+  [4;35;1mProject Load (2.5ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (24.8ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 241ms (View: 179, DB: 31) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:28:41) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245180521554", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 16329ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245180521554&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 16:29:04) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+TypeError (can't convert HashWithIndifferentAccess into String):
+  app/controllers/projects_controller.rb:52:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (176.6ms)
+Rendered rescues/_request_and_response (3.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (300.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:44:59) [GET]
+  [4;35;1mProject Load (74.2ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (788.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 1101ms (View: 228, DB: 1163) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:45:38) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245181537524", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 11ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245181537524&start=0&limit=5]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:46:56) [GET]
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 4800ms (View: 4668, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:47:40) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245181657303", "limit"=>"5"}
+  [4;36;1mProject Load (6.0ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 74ms (View: 1, DB: 6) | 200 OK [http://localhost/projects.json?_dc=1245181657303&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 16:47:59) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+TypeError (can't convert HashWithIndifferentAccess into String):
+  json (1.1.6) lib/json/common.rb:122:in `initialize'
+  json (1.1.6) lib/json/common.rb:122:in `new'
+  json (1.1.6) lib/json/common.rb:122:in `parse'
+  app/controllers/projects_controller.rb:55:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (411.0ms)
+Rendered rescues/_request_and_response (35.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (477.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:51:59) [GET]
+  [4;35;1mProject Load (18.1ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (748.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 843ms (View: 65, DB: 1245) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:52:07) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245181927121", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 8ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245181927121&start=0&limit=5]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:53:04) [GET]
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 83ms (View: 78, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:53:07) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245181987640", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245181987640&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 16:53:10) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+TypeError (can't convert HashWithIndifferentAccess into String):
+  json (1.1.6) lib/json/common.rb:122:in `initialize'
+  json (1.1.6) lib/json/common.rb:122:in `new'
+  json (1.1.6) lib/json/common.rb:122:in `parse'
+  app/controllers/projects_controller.rb:55:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (117.3ms)
+Rendered rescues/_request_and_response (3.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 16:54:44) [GET]
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 63ms (View: 58, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 16:54:46) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245182086941", "limit"=>"5"}
+  [4;36;1mProject Load (0.1ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245182086941&start=0&limit=5]
+  [4;36;1mSQL (98.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:02:36) [GET]
+  [4;35;1mProject Load (70.4ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (241.6ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 522ms (View: 185, DB: 412) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:02:41) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245182561693", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 8ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245182561693&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:02:59) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+TypeError (can't convert HashWithIndifferentAccess into String):
+  json (1.1.6) lib/json/pure/parser.rb:67:in `initialize'
+  json (1.1.6) lib/json/pure/parser.rb:67:in `initialize'
+  json (1.1.6) lib/json/common.rb:122:in `new'
+  json (1.1.6) lib/json/common.rb:122:in `parse'
+  app/controllers/projects_controller.rb:55:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (258.4ms)
+Rendered rescues/_request_and_response (21.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (17.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:07:19) [GET]
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (54.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 202ms (View: 122, DB: 73) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:07:31) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245182851813", "limit"=>"5"}
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 9ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245182851813&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:07:39) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+TypeError (can't convert HashWithIndifferentAccess into String):
+  json (1.1.6) lib/json/pure/parser.rb:67:in `initialize'
+  json (1.1.6) lib/json/pure/parser.rb:67:in `initialize'
+  json (1.1.6) lib/json/common.rb:122:in `new'
+  json (1.1.6) lib/json/common.rb:122:in `parse'
+  app/controllers/projects_controller.rb:56:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (212.1ms)
+Rendered rescues/_request_and_response (6.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (16.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:08:41) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (21.3ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 127ms (View: 92, DB: 38) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:08:44) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245182924017", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245182924017&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:09:11) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+TypeError (can't convert HashWithIndifferentAccess into String):
+  json (1.1.6) lib/json/pure/parser.rb:67:in `initialize'
+  json (1.1.6) lib/json/pure/parser.rb:67:in `initialize'
+  json (1.1.6) lib/json/common.rb:122:in `new'
+  json (1.1.6) lib/json/common.rb:122:in `parse'
+  app/controllers/projects_controller.rb:57:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (143.4ms)
+Rendered rescues/_request_and_response (3.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:13:01) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 151ms (View: 125, DB: 4) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:13:04) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245183184506", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245183184506&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:13:05) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+TypeError (can't convert HashWithIndifferentAccess into String):
+  json (1.1.6) lib/json/pure/parser.rb:67:in `initialize'
+  json (1.1.6) lib/json/pure/parser.rb:67:in `initialize'
+  json (1.1.6) lib/json/common.rb:122:in `new'
+  json (1.1.6) lib/json/common.rb:122:in `parse'
+  app/controllers/projects_controller.rb:57:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (333.0ms)
+Rendered rescues/_request_and_response (7.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:13:54) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 146ms (View: 130, DB: 3) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:13:57) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245183237123", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 5ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245183237123&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:14:00) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+JSON::NestingError (nesting of 4 is to deep):
+  json (1.1.6) lib/json/pure/parser.rb:221:in `parse_object'
+  json (1.1.6) lib/json/pure/parser.rb:174:in `parse_value'
+  json (1.1.6) lib/json/pure/parser.rb:195:in `parse_array'
+  json (1.1.6) lib/json/pure/parser.rb:169:in `parse_value'
+  json (1.1.6) lib/json/pure/parser.rb:233:in `parse_object'
+  json (1.1.6) lib/json/pure/parser.rb:174:in `parse_value'
+  json (1.1.6) lib/json/pure/parser.rb:233:in `parse_object'
+  json (1.1.6) lib/json/pure/parser.rb:95:in `parse'
+  json (1.1.6) lib/json/common.rb:122:in `parse'
+  app/controllers/projects_controller.rb:57:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (216.1ms)
+Rendered rescues/_request_and_response (6.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:14:48) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;35;1mProject Columns (3.3ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (18.9ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (330.3ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 20:15:23', '2009-06-16 20:15:23')[0m
+  [4;36;1mSQL (54.1ms)[0m   [0;1mCOMMIT[0m
+Completed in 35392ms (View: 5, DB: 407) | 201 Created [http://localhost/projects.json]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:15:35) [GET]
+  [4;35;1mProject Load (32.6ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mSQL (30.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 427ms (View: 354, DB: 63) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:15:39) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245183339257", "limit"=>"5"}
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245183339257&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:15:51) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (1.1ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 20:16:08', '2009-06-16 20:16:08')[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mCOMMIT[0m
+Completed in 16736ms (View: 5, DB: 3) | 201 Created [http://localhost/projects.json]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:16:08) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245183368437", "limit"=>"5"}
+  [4;36;1mProject Load (6.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 19ms (View: 1, DB: 7) | 200 OK [http://localhost/projects.json?_dc=1245183368437&start=0&limit=5]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:17:38) [GET]
+  [4;35;1mProject Load (1.2ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 37919ms (View: 120, DB: 5) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:18:18) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245183498050", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 29063ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245183498050&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:19:04) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: project):
+  app/controllers/projects_controller.rb:62:in `new'
+  app/controllers/projects_controller.rb:62:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (330.7ms)
+Rendered rescues/_request_and_response (9.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:19:43) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: project):
+  app/controllers/projects_controller.rb:62:in `new'
+  app/controllers/projects_controller.rb:62:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (300.4ms)
+Rendered rescues/_request_and_response (3.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:23:13) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 129ms (View: 109, DB: 4) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:23:16) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245183796416", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 142ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245183796416&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:23:18) [GET]
+  Parameters: {"start"=>"5", "_dc"=>"1245183798149", "limit"=>"5"}
+  [4;36;1mProject Load (1.6ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245183798149&start=5&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:23:20) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (17.5ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 20:23:20', '2009-06-16 20:23:20')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCOMMIT[0m
+Completed in 38ms (View: 3, DB: 19) | 201 Created [http://localhost/projects.json]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:23:20) [GET]
+  Parameters: {"start"=>"5", "_dc"=>"1245183800242", "limit"=>"5"}
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 16ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245183800242&start=5&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:23:21) [GET]
+  Parameters: {"start"=>"10", "_dc"=>"1245183801742", "limit"=>"5"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245183801742&start=10&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:23:22) [GET]
+  Parameters: {"start"=>"15", "_dc"=>"1245183802822", "limit"=>"5"}
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245183802822&start=15&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:23:23) [GET]
+  Parameters: {"start"=>"20", "_dc"=>"1245183803247", "limit"=>"5"}
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245183803247&start=20&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:23:23) [GET]
+  Parameters: {"start"=>"20", "_dc"=>"1245183803589", "limit"=>"5"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245183803589&start=20&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:23:24) [GET]
+  Parameters: {"start"=>"25", "_dc"=>"1245183804102", "limit"=>"5"}
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 8ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245183804102&start=25&limit=5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:27:23) [GET]
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 12019ms (View: 149, DB: 4) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:27:38) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245184058477", "limit"=>"5"}
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 181ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245184058477&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:27:41) [POST]
+  Parameters: {"project"=>{"name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.8ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 20:28:05', '2009-06-16 20:28:05')[0m
+  [4;36;1mSQL (20.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 23905ms (View: 4, DB: 22) | 201 Created [http://localhost/projects.json]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:28:05) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245184085698", "limit"=>"5"}
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 19ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245184085698&start=0&limit=5]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:28:33) [GET]
+  [4;35;1mProject Load (1.0ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 223ms (View: 213, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:28:36) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245184116430", "limit"=>"5"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 9ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245184116430&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:28:41) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+
+ActiveRecord::RecordNotSaved (You cannot call create unless the parent is saved):
+  app/controllers/projects_controller.rb:66:in `create'
+  app/controllers/projects_controller.rb:65:in `each'
+  app/controllers/projects_controller.rb:65:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (307.1ms)
+Rendered rescues/_request_and_response (9.8ms)
+Rendering rescues/layout (unprocessable_entity)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:30:11) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 97ms (View: 82, DB: 3) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:30:13) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245184213504", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 140ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245184213504&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:30:18) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::AssociationTypeMismatch (Item(#-616268998) expected, got HashWithIndifferentAccess(#-611614908)):
+  app/controllers/projects_controller.rb:66:in `create'
+  app/controllers/projects_controller.rb:65:in `each'
+  app/controllers/projects_controller.rb:65:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (313.4ms)
+Rendered rescues/_request_and_response (7.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:34:09) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::AssociationTypeMismatch (Item(#-616268998) expected, got HashWithIndifferentAccess(#-611614908)):
+  app/controllers/projects_controller.rb:66:in `create'
+  app/controllers/projects_controller.rb:65:in `each'
+  app/controllers/projects_controller.rb:65:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (339.8ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:35:04) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mROLLBACK[0m
+
+ActiveRecord::AssociationTypeMismatch (Item(#-616268998) expected, got HashWithIndifferentAccess(#-611614908)):
+  app/controllers/projects_controller.rb:66:in `create'
+  app/controllers/projects_controller.rb:65:in `each'
+  app/controllers/projects_controller.rb:65:in `create'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_load'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/lib/ruby-debug.rb:103:in `debug_program'
+  /home/cmilfont/.gem/ruby/1.8/gems/ruby-debug-ide-0.4.6/bin/rdebug-ide:82
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /home/cmilfont/.gem/ruby/1.8/bin/rdebug-ide:19
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (555.8ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 17:36:18) [GET]
+  [4;35;1mProject Load (1.2ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 134ms (View: 86, DB: 4) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:36:21) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245184581230", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 62ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245184581230&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 17:36:35) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mItem Columns (20.8ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (64.7ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 20:38:35', '2009-06-16 20:38:35')[0m
+  [4;35;1mItem Create (75.3ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-16 20:38:35', 40, '2009-06-16 20:38:35', 'teste')[0m
+  [4;36;1mSQL (28.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 124836ms (View: 14, DB: 190) | 201 Created [http://localhost/projects.json]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 17:38:45) [GET]
+  Parameters: {"start"=>"25", "_dc"=>"1245184725361", "limit"=>"5"}
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;36;1mSQL (13.8ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 21ms (View: 0, DB: 15) | 200 OK [http://localhost/projects.json?_dc=1245184725361&start=25&limit=5]
+  [4;36;1mSQL (198.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 18:19:09) [GET]
+  [4;35;1mProject Load (260.6ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (313.5ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 774ms (View: 177, DB: 774) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 18:19:17) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245187157404", "limit"=>"5"}
+  [4;36;1mProject Load (93.1ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 887ms (View: 0, DB: 93) | 200 OK [http://localhost/projects.json?_dc=1245187157404&start=0&limit=5]
+  [4;36;1mSQL (38.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 18:21:22) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (62.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 126ms (View: 55, DB: 102) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 18:21:32) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245187291356", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 788ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245187291356&start=0&limit=5]
+  [4;36;1mSQL (52.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 18:57:10) [GET]
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (83.5ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 265ms (View: 156, DB: 137) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 18:57:15) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245189435010", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 142ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245189435010&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 18:57:43) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mItem Columns (43.2ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (15.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (292.7ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 21:59:11', '2009-06-16 21:59:11')[0m
+  [4;35;1mItem Create (26.8ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-16 21:59:11', 41, '2009-06-16 21:59:11', 'teste')[0m
+  [4;36;1mSQL (51.1ms)[0m   [0;1mCOMMIT[0m
+Completed in 87619ms (View: 3, DB: 430) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-16 19:00:34) [GET]
+  [4;35;1mProject Load (13.6ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (25.0ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 147ms (View: 93, DB: 41) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-16 19:00:38) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245189638299", "limit"=>"5"}
+  [4;36;1mProject Load (6.8ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 64ms (View: 0, DB: 7) | 200 OK [http://localhost/projects.json?_dc=1245189638299&start=0&limit=5]
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-16 19:00:44) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mItem Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (1.6ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-16 22:01:37', '2009-06-16 22:01:37')[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-16 22:01:37', 42, '2009-06-16 22:01:37', 'teste')[0m
+  [4;36;1mSQL (17.3ms)[0m   [0;1mCOMMIT[0m
+Completed in 53300ms (View: 3, DB: 24) | 201 Created [http://localhost/projects.json]

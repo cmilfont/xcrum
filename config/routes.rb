@@ -10,9 +10,9 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :items
 
-  map.resources :projects do |projects| #, :has_many => [:items]
-    projects.resources :items, :collection => { :recent => :get }
-  end
+  map.resources :projects, :has_many => [:items] #do |projects| #
+    #projects.resources :items #, :collection => { :recent => :get }
+  #end
 
   # The priority is based upon order of creation: first created -> highest priority.
 

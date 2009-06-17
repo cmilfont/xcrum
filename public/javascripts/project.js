@@ -23,7 +23,8 @@ var Project = function() {
                 jsonData:{
                     project:{
                         name:'Milfont test',
-                        items_attributes:[{id:1,description:'teste'}]
+                        items_attributes:[{id:1,description:'teste'}],
+                        items:[{id:1,description:'teste'}]
                     }
                 },
                 method:'POST',
