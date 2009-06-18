@@ -156,7 +156,7 @@
       C0 code coverage information
     </h3>
     <p>
-      Generated on Mon Jun 08 14:16:41 -0300 2009 with 
+      Generated on Wed Jun 17 18:41:20 -0300 2009 with 
       <a href='http://eigenclass.org/hiki/rcov'>
         rcov 0.8.1.2
       </a>
@@ -175,112 +175,155 @@
     </td> </tr> </thead> <tbody> <tr class='light'> <td> <a
     href='app-controllers-projects_controller_rb.html'>
     app/controllers/projects_controller.rb </a> </td> <td class='lines_total'>
-    <tt> 85 </tt> </td> <td class='lines_code'> <tt> 60 </tt> </td> <td> <table
+    <tt> 116 </tt> </td> <td class='lines_code'> <tt> 75 </tt> </td> <td> <table
     cellspacing='0' align='right' cellpadding='0'> <tr> <td> <tt
-    class='coverage_total'> 31.8% </tt> &nbsp; </td> <td> <table
+    class='coverage_total'> 25.0% </tt> &nbsp; </td> <td> <table
     class='percent_graph' cellspacing='0' cellpadding='0' width='100'> <tr> <td
-    class='covered' width='32' /> <td class='uncovered' width='68' /> </tr>
+    class='covered' width='25' /> <td class='uncovered' width='75' /> </tr>
     </table> </td> </tr> </table> </td> <td> <table cellspacing='0'
-    align='right' cellpadding='0'> <tr> <td> <tt class='coverage_code'> 13.3%
+    align='right' cellpadding='0'> <tr> <td> <tt class='coverage_code'> 10.7%
     </tt> &nbsp; </td> <td> <table class='percent_graph' cellspacing='0'
-    cellpadding='0' width='100'> <tr> <td class='covered' width='13' /> <td
-    class='uncovered' width='87' /> </tr> </table> </td> </tr> </table> </td>
-    </tr> </tbody> </table><pre><span class="marked1"><a name="line1"></a> 1
-    class ProjectsController &lt; ApplicationController </span><span
-    class="inferred0"><a name="line2"></a> 2 # GET /projects </span><span
-    class="inferred1"><a name="line3"></a> 3 # GET /projects.xml </span><span
-    class="marked0"><a name="line4"></a> 4 def index </span><span
-    class="uncovered1"><a name="line5"></a> 5 @projects = Project.find(:all)
-    </span><span class="uncovered0"><a name="line6"></a> 6 </span><span
-    class="uncovered1"><a name="line7"></a> 7 respond_to do |format|
-    </span><span class="uncovered0"><a name="line8"></a> 8 format.html #
-    index.html.erb </span><span class="uncovered1"><a name="line9"></a> 9
-    format.xml { render :xml =&gt; @projects } </span><span
-    class="uncovered0"><a name="line10"></a>10 end </span><span
-    class="uncovered1"><a name="line11"></a>11 end </span><span
-    class="inferred0"><a name="line12"></a>12 </span><span class="inferred1"><a
-    name="line13"></a>13 # GET /projects/1 </span><span class="inferred0"><a
-    name="line14"></a>14 # GET /projects/1.xml </span><span class="marked1"><a
-    name="line15"></a>15 def show </span><span class="uncovered0"><a
-    name="line16"></a>16 @project = Project.find(params[:id]) </span><span
-    class="uncovered1"><a name="line17"></a>17 </span><span
-    class="uncovered0"><a name="line18"></a>18 respond_to do |format|
-    </span><span class="uncovered1"><a name="line19"></a>19 format.html #
-    show.html.erb </span><span class="uncovered0"><a name="line20"></a>20
-    format.xml { render :xml =&gt; @project } </span><span class="uncovered1"><a
-    name="line21"></a>21 end </span><span class="uncovered0"><a
-    name="line22"></a>22 end </span><span class="inferred1"><a
-    name="line23"></a>23 </span><span class="inferred0"><a name="line24"></a>24
-    # GET /projects/new </span><span class="inferred1"><a name="line25"></a>25 #
-    GET /projects/new.xml </span><span class="marked0"><a name="line26"></a>26
-    def new </span><span class="uncovered1"><a name="line27"></a>27 @project =
-    Project.new </span><span class="uncovered0"><a name="line28"></a>28
-    </span><span class="uncovered1"><a name="line29"></a>29 respond_to do
-    |format| </span><span class="uncovered0"><a name="line30"></a>30 format.html
-    # new.html.erb </span><span class="uncovered1"><a name="line31"></a>31
-    format.xml { render :xml =&gt; @project } </span><span class="uncovered0"><a
-    name="line32"></a>32 end </span><span class="uncovered1"><a
-    name="line33"></a>33 end </span><span class="inferred0"><a
-    name="line34"></a>34 </span><span class="inferred1"><a name="line35"></a>35
-    # GET /projects/1/edit </span><span class="marked0"><a name="line36"></a>36
-    def edit </span><span class="uncovered1"><a name="line37"></a>37 @project =
+    cellpadding='0' width='100'> <tr> <td class='covered' width='11' /> <td
+    class='uncovered' width='89' /> </tr> </table> </td> </tr> </table> </td>
+    </tr> </tbody> </table><pre><span class="inferred1"><a name="line1"></a> 1
+    #require 'json/pure' </span><span class="inferred0"><a name="line2"></a> 2
+    </span><span class="marked1"><a name="line3"></a> 3 class ProjectsController
+    &lt; ApplicationController </span><span class="inferred0"><a
+    name="line4"></a> 4 # GET /projects </span><span class="inferred1"><a
+    name="line5"></a> 5 # GET /projects.xml </span><span class="marked0"><a
+    name="line6"></a> 6 def index </span><span class="uncovered1"><a
+    name="line7"></a> 7 #ActiveRecord::Base.include_root_in_json = false
+    </span><span class="uncovered0"><a name="line8"></a> 8 @projects =
+    Project.find(:all, :offset =&gt; params[:start], :limit =&gt;
+    params[:limit]) </span><span class="uncovered1"><a name="line9"></a> 9 @dto
+    = DataTransferObject.new </span><span class="uncovered0"><a
+    name="line10"></a> 10 @dto.total = Project.count </span><span
+    class="uncovered1"><a name="line11"></a> 11 @dto.results = @projects.to_a
+    </span><span class="uncovered0"><a name="line12"></a> 12 </span><span
+    class="uncovered1"><a name="line13"></a> 13 respond_to do |format|
+    </span><span class="uncovered0"><a name="line14"></a> 14 format.json {
+    render :layout =&gt; false, </span><span class="uncovered1"><a
+    name="line15"></a> 15 :json =&gt; @dto.to_json } </span><span
+    class="uncovered0"><a name="line16"></a> 16 format.html # index.html.erb
+    </span><span class="uncovered1"><a name="line17"></a> 17 format.xml { render
+    :xml =&gt; @projects } </span><span class="uncovered0"><a name="line18"></a>
+    18 #format.ext_json { render :json =&gt; @projects.to_ext_json(:class =&gt;
+    :project, :count =&gt; Project.count) } </span><span class="uncovered1"><a
+    name="line19"></a> 19 end </span><span class="uncovered0"><a
+    name="line20"></a> 20 end </span><span class="inferred1"><a
+    name="line21"></a> 21 </span><span class="inferred0"><a name="line22"></a>
+    22 # GET /projects/1 </span><span class="inferred1"><a name="line23"></a> 23
+    # GET /projects/1.xml </span><span class="marked0"><a name="line24"></a> 24
+    def show </span><span class="uncovered1"><a name="line25"></a> 25 @project =
     Project.find(params[:id]) </span><span class="uncovered0"><a
-    name="line38"></a>38 end </span><span class="inferred1"><a
-    name="line39"></a>39 </span><span class="inferred0"><a name="line40"></a>40
-    # POST /projects </span><span class="inferred1"><a name="line41"></a>41 #
-    POST /projects.xml </span><span class="marked0"><a name="line42"></a>42 def
-    create </span><span class="uncovered1"><a name="line43"></a>43 @project =
+    name="line26"></a> 26 </span><span class="uncovered1"><a name="line27"></a>
+    27 respond_to do |format| </span><span class="uncovered0"><a
+    name="line28"></a> 28 format.json { render :json =&gt; @project.to_json }
+    </span><span class="uncovered1"><a name="line29"></a> 29 format.html #
+    show.html.erb </span><span class="uncovered0"><a name="line30"></a> 30
+    format.xml { render :xml =&gt; @project } </span><span class="uncovered1"><a
+    name="line31"></a> 31 end </span><span class="uncovered0"><a
+    name="line32"></a> 32 end </span><span class="inferred1"><a
+    name="line33"></a> 33 </span><span class="inferred0"><a name="line34"></a>
+    34 # GET /projects/new </span><span class="inferred1"><a name="line35"></a>
+    35 # GET /projects/new.xml </span><span class="marked0"><a
+    name="line36"></a> 36 def new </span><span class="uncovered1"><a
+    name="line37"></a> 37 @project = Project.new </span><span
+    class="uncovered0"><a name="line38"></a> 38 </span><span
+    class="uncovered1"><a name="line39"></a> 39 respond_to do |format|
+    </span><span class="uncovered0"><a name="line40"></a> 40 format.html #
+    new.html.erb </span><span class="uncovered1"><a name="line41"></a> 41
+    format.xml { render :xml =&gt; @project } </span><span class="uncovered0"><a
+    name="line42"></a> 42 end </span><span class="uncovered1"><a
+    name="line43"></a> 43 end </span><span class="inferred0"><a
+    name="line44"></a> 44 </span><span class="inferred1"><a name="line45"></a>
+    45 # GET /projects/1/edit </span><span class="marked0"><a name="line46"></a>
+    46 def edit </span><span class="uncovered1"><a name="line47"></a> 47
+    @project = Project.find(params[:id]) </span><span class="uncovered0"><a
+    name="line48"></a> 48 end </span><span class="inferred1"><a
+    name="line49"></a> 49 </span><span class="inferred0"><a name="line50"></a>
+    50 # POST /projects </span><span class="inferred1"><a name="line51"></a> 51
+    # POST /projects.xml </span><span class="marked0"><a name="line52"></a> 52
+    def create </span><span class="uncovered1"><a name="line53"></a> 53
+    #ActiveRecord::Base.include_root_in_json = false </span><span
+    class="uncovered0"><a name="line54"></a> 54 #@p =
+    ActiveSupport::JSON.decode(params[:project]) </span><span
+    class="uncovered1"><a name="line55"></a> 55 #@t =
+    request.env['RAW_POST_DATA'] </span><span class="uncovered0"><a
+    name="line56"></a> 56 #@json = params[:project] </span><span
+    class="uncovered1"><a name="line57"></a> 57 #@p = JSON.parse(@t, opts = {
+    </span><span class="uncovered0"><a name="line58"></a> 58 # :max_nesting
+    =&gt; 19, </span><span class="uncovered1"><a name="line59"></a> 59 #
+    :allow_nan =&gt; true </span><span class="uncovered0"><a name="line60"></a>
+    60 #}) </span><span class="uncovered1"><a name="line61"></a> 61 </span><span
+    class="uncovered0"><a name="line62"></a> 62 items =
+    params[:project].delete(&quot;items&quot;) </span><span
+    class="uncovered1"><a name="line63"></a> 63 @project =
     Project.new(params[:project]) </span><span class="uncovered0"><a
-    name="line44"></a>44 </span><span class="uncovered1"><a name="line45"></a>45
-    respond_to do |format| </span><span class="uncovered0"><a
-    name="line46"></a>46 if @project.save </span><span class="uncovered1"><a
-    name="line47"></a>47 flash[:notice] = 'Project was successfully created.'
-    </span><span class="uncovered0"><a name="line48"></a>48 format.html {
-    redirect_to(@project) } </span><span class="uncovered1"><a
-    name="line49"></a>49 format.xml { render :xml =&gt; @project, :status =&gt;
-    :created, :location =&gt; @project } </span><span class="uncovered0"><a
-    name="line50"></a>50 else </span><span class="uncovered1"><a
-    name="line51"></a>51 format.html { render :action =&gt; &quot;new&quot; }
-    </span><span class="uncovered0"><a name="line52"></a>52 format.xml { render
-    :xml =&gt; @project.errors, :status =&gt; :unprocessable_entity }
-    </span><span class="uncovered1"><a name="line53"></a>53 end </span><span
-    class="uncovered0"><a name="line54"></a>54 end </span><span
-    class="uncovered1"><a name="line55"></a>55 end </span><span
-    class="inferred0"><a name="line56"></a>56 </span><span class="inferred1"><a
-    name="line57"></a>57 # PUT /projects/1 </span><span class="inferred0"><a
-    name="line58"></a>58 # PUT /projects/1.xml </span><span class="marked1"><a
-    name="line59"></a>59 def update </span><span class="uncovered0"><a
-    name="line60"></a>60 @project = Project.find(params[:id]) </span><span
-    class="uncovered1"><a name="line61"></a>61 </span><span
-    class="uncovered0"><a name="line62"></a>62 respond_to do |format|
-    </span><span class="uncovered1"><a name="line63"></a>63 if
-    @project.update_attributes(params[:project]) </span><span
-    class="uncovered0"><a name="line64"></a>64 flash[:notice] = 'Project was
-    successfully updated.' </span><span class="uncovered1"><a
-    name="line65"></a>65 format.html { redirect_to(@project) } </span><span
-    class="uncovered0"><a name="line66"></a>66 format.xml { head :ok }
-    </span><span class="uncovered1"><a name="line67"></a>67 else </span><span
-    class="uncovered0"><a name="line68"></a>68 format.html { render :action
+    name="line64"></a> 64 </span><span class="uncovered1"><a name="line65"></a>
+    65 if items </span><span class="uncovered0"><a name="line66"></a> 66
+    items.each do |item| </span><span class="uncovered1"><a name="line67"></a>
+    67 @project.items &lt;&lt; Item.new(item) </span><span class="uncovered0"><a
+    name="line68"></a> 68 #@project.items.create(item) </span><span
+    class="uncovered1"><a name="line69"></a> 69 end </span><span
+    class="uncovered0"><a name="line70"></a> 70 end </span><span
+    class="uncovered1"><a name="line71"></a> 71 </span><span
+    class="uncovered0"><a name="line72"></a> 72 respond_to do |format|
+    </span><span class="uncovered1"><a name="line73"></a> 73 </span><span
+    class="uncovered0"><a name="line74"></a> 74 if @project.save </span><span
+    class="uncovered1"><a name="line75"></a> 75 flash[:notice] = 'Project was
+    successfully created.' </span><span class="uncovered0"><a name="line76"></a>
+    76 format.json { render :json =&gt; @project.to_json, :status =&gt;
+    :created, :location =&gt; @project } </span><span class="uncovered1"><a
+    name="line77"></a> 77 format.html { redirect_to(@project) } </span><span
+    class="uncovered0"><a name="line78"></a> 78 format.xml { render :xml =&gt;
+    @project, :status =&gt; :created, :location =&gt; @project } </span><span
+    class="uncovered1"><a name="line79"></a> 79 else </span><span
+    class="uncovered0"><a name="line80"></a> 80 format.json { render :json =&gt;
+    @project.errors, :status =&gt; :unprocessable_entity } </span><span
+    class="uncovered1"><a name="line81"></a> 81 format.html { render :action
+    =&gt; &quot;new&quot; } </span><span class="uncovered0"><a
+    name="line82"></a> 82 format.xml { render :xml =&gt; @project.errors,
+    :status =&gt; :unprocessable_entity } </span><span class="uncovered1"><a
+    name="line83"></a> 83 end </span><span class="uncovered0"><a
+    name="line84"></a> 84 end </span><span class="uncovered1"><a
+    name="line85"></a> 85 end </span><span class="inferred0"><a
+    name="line86"></a> 86 </span><span class="inferred1"><a name="line87"></a>
+    87 # PUT /projects/1 </span><span class="inferred0"><a name="line88"></a> 88
+    # PUT /projects/1.xml </span><span class="marked1"><a name="line89"></a> 89
+    def update </span><span class="uncovered0"><a name="line90"></a> 90 @project
+    = Project.find(params[:id]) </span><span class="uncovered1"><a
+    name="line91"></a> 91 </span><span class="uncovered0"><a name="line92"></a>
+    92 respond_to do |format| </span><span class="uncovered1"><a
+    name="line93"></a> 93 if @project.update_attributes(params[:project])
+    </span><span class="uncovered0"><a name="line94"></a> 94 flash[:notice] =
+    'Project was successfully updated.' </span><span class="uncovered1"><a
+    name="line95"></a> 95 format.html { redirect_to(@project) } </span><span
+    class="uncovered0"><a name="line96"></a> 96 format.xml { head :ok }
+    </span><span class="uncovered1"><a name="line97"></a> 97 else </span><span
+    class="uncovered0"><a name="line98"></a> 98 format.html { render :action
     =&gt; &quot;edit&quot; } </span><span class="uncovered1"><a
-    name="line69"></a>69 format.xml { render :xml =&gt; @project.errors, :status
-    =&gt; :unprocessable_entity } </span><span class="uncovered0"><a
-    name="line70"></a>70 end </span><span class="uncovered1"><a
-    name="line71"></a>71 end </span><span class="uncovered0"><a
-    name="line72"></a>72 end </span><span class="inferred1"><a
-    name="line73"></a>73 </span><span class="inferred0"><a name="line74"></a>74
-    # DELETE /projects/1 </span><span class="inferred1"><a name="line75"></a>75
-    # DELETE /projects/1.xml </span><span class="marked0"><a
-    name="line76"></a>76 def destroy </span><span class="uncovered1"><a
-    name="line77"></a>77 @project = Project.find(params[:id]) </span><span
-    class="uncovered0"><a name="line78"></a>78 @project.destroy </span><span
-    class="uncovered1"><a name="line79"></a>79 </span><span
-    class="uncovered0"><a name="line80"></a>80 respond_to do |format|
-    </span><span class="uncovered1"><a name="line81"></a>81 format.html {
-    redirect_to(projects_url) } </span><span class="uncovered0"><a
-    name="line82"></a>82 format.xml { head :ok } </span><span
-    class="uncovered1"><a name="line83"></a>83 end </span><span
-    class="uncovered0"><a name="line84"></a>84 end </span><span
-    class="uncovered1"><a name="line85"></a>85 end </span></pre>
+    name="line99"></a> 99 format.xml { render :xml =&gt; @project.errors,
+    :status =&gt; :unprocessable_entity } </span><span class="uncovered0"><a
+    name="line100"></a>100 end </span><span class="uncovered1"><a
+    name="line101"></a>101 end </span><span class="uncovered0"><a
+    name="line102"></a>102 end </span><span class="inferred1"><a
+    name="line103"></a>103 </span><span class="inferred0"><a
+    name="line104"></a>104 # DELETE /projects/1 </span><span
+    class="inferred1"><a name="line105"></a>105 # DELETE /projects/1.xml
+    </span><span class="marked0"><a name="line106"></a>106 def destroy
+    </span><span class="uncovered1"><a name="line107"></a>107 @project =
+    Project.find(params[:id]) </span><span class="uncovered0"><a
+    name="line108"></a>108 @project.destroy </span><span class="uncovered1"><a
+    name="line109"></a>109 </span><span class="uncovered0"><a
+    name="line110"></a>110 respond_to do |format| </span><span
+    class="uncovered1"><a name="line111"></a>111 format.json { head :ok }
+    </span><span class="uncovered0"><a name="line112"></a>112 format.html {
+    redirect_to(projects_url) } </span><span class="uncovered1"><a
+    name="line113"></a>113 format.xml { head :ok } </span><span
+    class="uncovered0"><a name="line114"></a>114 end </span><span
+    class="uncovered1"><a name="line115"></a>115 end </span><span
+    class="uncovered0"><a name="line116"></a>116 end </span></pre>
     <hr />
     <p> Generated using the <a href='http://eigenclass.org/hiki.rb?rcov'> rcov
     code coverage analysis tool for Ruby </a> version 0.8.1.2. </p>

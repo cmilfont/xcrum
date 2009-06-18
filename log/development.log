@@ -4601,3 +4601,105 @@ DEPRECATION WARNING: Disabling sessions for a single controller has been depreca
   [4;36;1mProject Columns (227.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
   [4;35;1mItem Load (163.0ms)[0m   [0mSELECT * FROM `items` WHERE (`items`.project_id = 1) [0m
   [4;36;1mItem Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (14.7ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (5.6ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (27.0ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (14.9ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (24.2ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (6.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (14.7ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (363.0ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (24.8ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (22.2ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (68.7ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (5.1ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
