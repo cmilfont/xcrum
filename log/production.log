@@ -6622,3 +6622,2122 @@ WARNING: Can't mass-assign these protected attributes: id
   [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-16 22:01:37', 42, '2009-06-16 22:01:37', 'teste')[0m
   [4;36;1mSQL (17.3ms)[0m   [0;1mCOMMIT[0m
 Completed in 53300ms (View: 3, DB: 24) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (63.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 10:40:35) [GET]
+  [4;35;1mProject Load (137.0ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (63.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 602ms (View: 384, DB: 265) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 10:40:38) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245764438775", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 122ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245764438775&start=0&limit=5]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-06-23 10:40:43) [GET]
+Rendering template within layouts/projects
+Rendering projects/new
+Rendered projects/_form (12.0ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/projects/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:40:44) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:40:44) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:40:44) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:40:44) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:40:44) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#create (for 127.0.0.1 at 2009-06-23 10:41:02) [POST]
+  Parameters: {"commit"=>"translation missing: en, txt, shared, create", "authenticity_token"=>"A0yUtdpZOXHK/I+rix8UsIWnntcShJa5zovg5OTpjKA=", "project"=>{"name"=>"okm isso eh um teste", "created_at"=>"", "updated_at"=>""}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (81.7ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('okm isso eh um teste', '2009-06-23 13:41:02', '2009-06-23 13:41:02')[0m
+  [4;36;1mSQL (21.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/projects/43
+Completed in 118ms (DB: 103) | 302 Found [http://localhost/projects]
+
+
+Processing ProjectsController#show (for 127.0.0.1 at 2009-06-23 10:41:02) [GET]
+  Parameters: {"id"=>"43"}
+  [4;35;1mProject Load (26.5ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 43) [0m
+Rendering template within layouts/projects
+Rendering projects/show
+Completed in 45ms (View: 15, DB: 27) | 200 OK [http://localhost/projects/43]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:41:02) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:41:02) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:41:02) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:41:03) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:41:03) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 10:41:05) [GET]
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 131ms (View: 124, DB: 2) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 10:41:07) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245764467512", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245764467512&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 10:41:14) [GET]
+  Parameters: {"start"=>"30", "_dc"=>"1245764474604", "limit"=>"5"}
+  [4;36;1mProject Load (1.0ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 8ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245764474604&start=30&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 10:41:17) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245764477511", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245764477511&start=0&limit=5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 10:44:58) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 190ms (View: 179, DB: 3) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 10:45:01) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245764701524", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 41ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245764701524&start=0&limit=5]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-06-23 10:47:53) [GET]
+Rendering template within layouts/projects
+Rendering projects/new
+Rendered projects/_form (9.6ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/projects/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:47:54) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:47:54) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:47:54) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:47:54) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:47:54) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-06-23 10:56:35) [GET]
+  [4;35;1mProject Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/projects
+Rendering projects/new
+Rendered projects/_form (9.8ms)
+Completed in 24ms (View: 15, DB: 3) | 200 OK [http://localhost/projects/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:56:36) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:56:36) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:56:36) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:56:36) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 10:56:36) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-06-23 11:25:13) [GET]
+  [4;35;1mProject Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Rendering template within layouts/projects
+Rendering projects/new
+Rendered projects/_form (54.3ms)
+Completed in 81ms (View: 64, DB: 4) | 200 OK [http://localhost/projects/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:14) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:14) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:14) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:14) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:14) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:25:37) [GET]
+  [4;36;1mProject Load (37.5ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 88ms (View: 47, DB: 38) | 200 OK [http://localhost/projects/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:37) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:37) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:37) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:38) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:38) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#javascripts to js (for 127.0.0.1 at 2009-06-23 11:25:38) [GET]
+  Parameters: {"id"=>"project"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: create, destroy, edit, index, new, show, and update):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:25:44) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 115ms (View: 109, DB: 1) | 200 OK [http://localhost/projects/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:45) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:45) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:45) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:45) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:25:45) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#javascripts to js (for 127.0.0.1 at 2009-06-23 11:25:45) [GET]
+  Parameters: {"id"=>"project"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: create, destroy, edit, index, new, show, and update):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:31:19) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 133ms (View: 127, DB: 1) | 200 OK [http://localhost/projects/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:31:19) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:31:19) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:31:19) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:31:20) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:31:20) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#javascripts to js (for 127.0.0.1 at 2009-06-23 11:31:20) [GET]
+  Parameters: {"id"=>"project"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: create, destroy, edit, index, new, show, and update):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:32:11) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 373ms (View: 366, DB: 1) | 200 OK [http://localhost/projects/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:32:13) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:32:13) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:32:13) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:32:13) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:32:13) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#javascripts to js (for 127.0.0.1 at 2009-06-23 11:32:13) [GET]
+  Parameters: {"id"=>"project"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: create, destroy, edit, index, new, show, and update):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:33:33) [GET]
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (15.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 364ms (View: 328, DB: 17) | 200 OK [http://localhost/projects/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:33:34) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:33:34) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:33:34) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:33:34) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:33:34) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#javascripts to js (for 127.0.0.1 at 2009-06-23 11:33:34) [GET]
+  Parameters: {"id"=>"project"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: create, destroy, edit, index, new, show, and update):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:44:12) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 365ms (View: 326, DB: 5) | 200 OK [http://localhost/projects/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:44:13) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:44:13) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:44:13) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:44:13) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:44:13) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#javascripts to js (for 127.0.0.1 at 2009-06-23 11:44:13) [GET]
+  Parameters: {"id"=>"project"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: create, destroy, edit, index, new, show, and update):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:50:48) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 126ms (View: 119, DB: 1) | 200 OK [http://localhost/projects/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:50:49) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:50:49) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:50:49) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:50:49) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:50:49) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#javascripts to js (for 127.0.0.1 at 2009-06-23 11:50:49) [GET]
+  Parameters: {"id"=>"project"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: create, destroy, edit, index, new, show, and update):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:54:17) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 167ms (View: 157, DB: 3) | 200 OK [http://localhost/projects/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:54:18) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:54:18) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:54:18) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:54:18) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:54:18) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#javascripts to js (for 127.0.0.1 at 2009-06-23 11:54:18) [GET]
+  Parameters: {"id"=>"project"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: create, destroy, edit, index, new, show, and update):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:55:29) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 119ms (View: 112, DB: 1) | 200 OK [http://localhost/projects/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:55:30) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:55:30) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:55:30) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:55:30) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:55:30) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#javascripts to js (for 127.0.0.1 at 2009-06-23 11:55:30) [GET]
+  Parameters: {"id"=>"project"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: create, destroy, edit, index, new, show, and update):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:57:29) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 165ms (View: 157, DB: 1) | 200 OK [http://localhost/projects/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:57:30) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/ext-all.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:57:30) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/resources/css/xtheme-gray.css" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:57:30) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/adapter/ext/ext-base.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:57:30) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/ext-all.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-06-23 11:57:30) [GET]
+
+ActionController::RoutingError (No route matches "/projects/javascripts/ext-2.2/build/locale/ext-lang-pt_BR.js" with {:method=>:get}):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProjectsController#javascripts to js (for 127.0.0.1 at 2009-06-23 11:57:30) [GET]
+  Parameters: {"id"=>"project"}
+
+ActionController::UnknownAction (No action responded to javascripts. Actions: create, destroy, edit, index, new, show, and update):
+  -e:1:in `load'
+  -e:1
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:58:00) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 171ms (View: 159, DB: 3) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:58:00) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 116ms (View: 106, DB: 1) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:58:00) [GET]
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 66ms (View: 60, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 11:58:01) [GET]
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 69ms (View: 63, DB: 0) | 200 OK [http://localhost/projects/]
+
+
+Processing ProjectsController#show to json (for 127.0.0.1 at 2009-06-23 11:58:03) [GET]
+  Parameters: {"id"=>"projects", "start"=>"0", "_dc"=>"1245769083906", "limit"=>"5"}
+  [4;36;1mProject Load (324.9ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Project with ID=projects):
+  app/controllers/projects_controller.rb:25:in `show'
+  -e:1:in `load'
+  -e:1
+
+Rendered rescues/_trace (75.5ms)
+Rendered rescues/_request_and_response (29.1ms)
+Rendering rescues/layout (not_found)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-23 12:01:51) [GET]
+Rendering home/index
+Completed in 13ms (View: 5, DB: 325) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-06-23 12:01:54) [GET]
+Rendering sessions/new
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/login]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-06-23 12:01:59) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"A0yUtdpZOXHK/I+rix8UsIWnntcShJa5zovg5OTpjKA=", "login"=>"cmilfont", "password"=>"fuhrer"}
+  [4;35;1mUser Columns (41.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (122.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'cmilfont') LIMIT 1[0m
+  [4;35;1mSQL (9.5ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 208ms (DB: 175) | 302 Found [http://localhost/session]
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-23 12:01:59) [GET]
+Rendering home/index
+  [4;35;1mUser Load (1.1ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 12:02:05) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 258ms (View: 251, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:02:07) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245769327794", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 101ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245769327794&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:03:12) [GET]
+  Parameters: {"start"=>"5", "_dc"=>"1245769392368", "limit"=>"5"}
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245769392368&start=5&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:03:13) [GET]
+  Parameters: {"start"=>"10", "_dc"=>"1245769393813", "limit"=>"5"}
+  [4;36;1mProject Load (1.0ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245769393813&start=10&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:03:14) [GET]
+  Parameters: {"start"=>"15", "_dc"=>"1245769394629", "limit"=>"5"}
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245769394629&start=15&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:03:15) [GET]
+  Parameters: {"start"=>"20", "_dc"=>"1245769395699", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245769395699&start=20&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:03:16) [GET]
+  Parameters: {"start"=>"25", "_dc"=>"1245769396196", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245769396196&start=25&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:03:16) [GET]
+  Parameters: {"start"=>"30", "_dc"=>"1245769396841", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245769396841&start=30&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:03:18) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245769398862", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245769398862&start=0&limit=5]
+
+
+Processing ProjectsController#new (for 127.0.0.1 at 2009-06-23 12:03:25) [GET]
+Rendering template within layouts/projects
+Rendering projects/new
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::XcrumFormBuilder) on line #1 of app/views/projects/_form.html.erb:
+1: <% form_for @project, :builder => XcrumFormBuilder do |f| %>
+2: 
+3:     <%= f.error_messages %>
+4: 
+
+    app/views/projects/_form.html.erb:1
+    app/views/projects/new.html.erb:3
+    app/controllers/projects_controller.rb:39:in `new'
+    -e:1:in `load'
+    -e:1
+
+Rendered rescues/_trace (213.4ms)
+Rendered rescues/_request_and_response (1.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:03:35) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245769415894", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245769415894&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:26:43) [GET]
+  Parameters: {"start"=>"5", "_dc"=>"1245770803479", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245770803479&start=5&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:26:45) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245770805756", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245770805756&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:40:52) [GET]
+  Parameters: {"start"=>"20", "_dc"=>"1245771652651", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245771652651&start=20&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:41:05) [GET]
+  Parameters: {"start"=>"25", "_dc"=>"1245771665702", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245771665702&start=25&limit=5]
+  [4;36;1mSQL (55.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 12:48:07) [GET]
+  [4;35;1mProject Load (15.0ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (160.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 514ms (View: 331, DB: 231) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:12) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245772092498", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 112ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772092498&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:16) [GET]
+  Parameters: {"start"=>"5", "page"=>"0", "_dc"=>"1245772096721", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772096721&start=5&limit=5&page=0]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:19) [GET]
+  Parameters: {"start"=>"10", "page"=>"5", "_dc"=>"1245772099928", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772099928&start=10&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:21) [GET]
+  Parameters: {"start"=>"15", "page"=>"10", "_dc"=>"1245772101441", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772101441&start=15&limit=5&page=10]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:23) [GET]
+  Parameters: {"start"=>"20", "page"=>"15", "_dc"=>"1245772103618", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 33ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772103618&start=20&limit=5&page=15]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:26) [GET]
+  Parameters: {"start"=>"25", "page"=>"20", "_dc"=>"1245772106073", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772106073&start=25&limit=5&page=20]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:27) [GET]
+  Parameters: {"start"=>"30", "page"=>"25", "_dc"=>"1245772107331", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772107331&start=30&limit=5&page=25]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:37) [GET]
+  Parameters: {"start"=>"30", "page"=>"30", "_dc"=>"1245772116954", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772116954&start=30&limit=5&page=30]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:38) [GET]
+  Parameters: {"start"=>"30", "page"=>"30", "_dc"=>"1245772118374", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 9ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772118374&start=30&limit=5&page=30]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:39) [GET]
+  Parameters: {"start"=>"30", "page"=>"30", "_dc"=>"1245772119228", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772119228&start=30&limit=5&page=30]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:40) [GET]
+  Parameters: {"start"=>"30", "page"=>"30", "_dc"=>"1245772120200", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772120200&start=30&limit=5&page=30]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:41) [GET]
+  Parameters: {"start"=>"30", "page"=>"30", "_dc"=>"1245772121361", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772121361&start=30&limit=5&page=30]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:46) [GET]
+  Parameters: {"start"=>"25", "page"=>"30", "_dc"=>"1245772126811", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772126811&start=25&limit=5&page=30]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:49) [GET]
+  Parameters: {"start"=>"20", "page"=>"25", "_dc"=>"1245772129174", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772129174&start=20&limit=5&page=25]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:50) [GET]
+  Parameters: {"start"=>"15", "page"=>"20", "_dc"=>"1245772130370", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772130370&start=15&limit=5&page=20]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:48:55) [GET]
+  Parameters: {"start"=>"0", "page"=>"15", "_dc"=>"1245772135461", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772135461&start=0&limit=5&page=15]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:49:02) [GET]
+  Parameters: {"start"=>"25", "page"=>"0", "_dc"=>"1245772142003", "limit"=>"5"}
+  [4;36;1mProject Load (5.1ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 5) | 200 OK [http://localhost/projects.json?_dc=1245772142003&start=25&limit=5&page=0]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 12:53:46) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 126ms (View: 120, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:53:49) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245772429218", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 10ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772429218&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:53:51) [GET]
+  Parameters: {"start"=>"5", "page"=>"5", "_dc"=>"1245772431888", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772431888&start=5&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:53:54) [GET]
+  Parameters: {"start"=>"10", "page"=>"10", "_dc"=>"1245772433972", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772433972&start=10&limit=5&page=10]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:53:54) [GET]
+  Parameters: {"start"=>"15", "page"=>"15", "_dc"=>"1245772434779", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772434779&start=15&limit=5&page=15]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:53:57) [GET]
+  Parameters: {"start"=>"10", "page"=>"20", "_dc"=>"1245772437428", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772437428&start=10&limit=5&page=20]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:53:58) [GET]
+  Parameters: {"start"=>"5", "page"=>"15", "_dc"=>"1245772438724", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772438724&start=5&limit=5&page=15]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:54:00) [GET]
+  Parameters: {"start"=>"0", "page"=>"10", "_dc"=>"1245772440228", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772440228&start=0&limit=5&page=10]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:54:03) [GET]
+  Parameters: {"start"=>"0", "page"=>"5", "_dc"=>"1245772442906", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772442906&start=0&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:54:03) [GET]
+  Parameters: {"start"=>"0", "page"=>"5", "_dc"=>"1245772443711", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772443711&start=0&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:54:04) [GET]
+  Parameters: {"start"=>"0", "page"=>"5", "_dc"=>"1245772444360", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772444360&start=0&limit=5&page=5]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 12:54:38) [GET]
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (20.3ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 437ms (View: 397, DB: 22) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:54:41) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245772481487", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 63ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772481487&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:54:45) [GET]
+  Parameters: {"start"=>"5", "page"=>"5", "_dc"=>"1245772484968", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772484968&start=5&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:54:46) [GET]
+  Parameters: {"start"=>"10", "page"=>"10", "_dc"=>"1245772486785", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772486785&start=10&limit=5&page=10]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 12:55:00) [GET]
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 52ms (View: 48, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:55:02) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245772502267", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772502267&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:55:04) [GET]
+  Parameters: {"start"=>"5", "page"=>"5", "_dc"=>"1245772504265", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772504265&start=5&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:55:05) [GET]
+  Parameters: {"start"=>"10", "page"=>"5", "_dc"=>"1245772505010", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772505010&start=10&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:55:05) [GET]
+  Parameters: {"start"=>"15", "page"=>"5", "_dc"=>"1245772505625", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772505625&start=15&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:55:06) [GET]
+  Parameters: {"start"=>"20", "page"=>"5", "_dc"=>"1245772506777", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772506777&start=20&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:55:10) [GET]
+  Parameters: {"start"=>"25", "page"=>"5", "_dc"=>"1245772510417", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772510417&start=25&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:55:11) [GET]
+  Parameters: {"start"=>"30", "page"=>"5", "_dc"=>"1245772511226", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772511226&start=30&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:55:13) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1245772513296", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772513296&start=0&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:55:17) [GET]
+  Parameters: {"start"=>"5", "page"=>"5", "_dc"=>"1245772517061", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772517061&start=5&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:55:20) [GET]
+  Parameters: {"start"=>"0", "page"=>"5", "_dc"=>"1245772520287", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772520287&start=0&limit=5&page=5]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 12:56:55) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 339ms (View: 132, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:56:58) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245772617993", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772617993&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:01) [GET]
+  Parameters: {"start"=>"5", "page"=>"1", "_dc"=>"1245772621641", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772621641&start=5&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:02) [GET]
+  Parameters: {"start"=>"10", "page"=>"2", "_dc"=>"1245772622725", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772622725&start=10&limit=5&page=2]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:05) [GET]
+  Parameters: {"start"=>"15", "page"=>"3", "_dc"=>"1245772625399", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772625399&start=15&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:06) [GET]
+  Parameters: {"start"=>"20", "page"=>"4", "_dc"=>"1245772626281", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772626281&start=20&limit=5&page=4]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:06) [GET]
+  Parameters: {"start"=>"25", "page"=>"5", "_dc"=>"1245772626888", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772626888&start=25&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:07) [GET]
+  Parameters: {"start"=>"30", "page"=>"6", "_dc"=>"1245772627534", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772627534&start=30&limit=5&page=6]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:11) [GET]
+  Parameters: {"start"=>"25", "page"=>"7", "_dc"=>"1245772630925", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772630925&start=25&limit=5&page=7]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:11) [GET]
+  Parameters: {"start"=>"20", "page"=>"6", "_dc"=>"1245772631639", "limit"=>"5"}
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772631639&start=20&limit=5&page=6]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:12) [GET]
+  Parameters: {"start"=>"15", "page"=>"5", "_dc"=>"1245772632153", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772632153&start=15&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:12) [GET]
+  Parameters: {"start"=>"10", "page"=>"4", "_dc"=>"1245772632608", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772632608&start=10&limit=5&page=4]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:13) [GET]
+  Parameters: {"start"=>"5", "page"=>"3", "_dc"=>"1245772633017", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772633017&start=5&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:13) [GET]
+  Parameters: {"start"=>"0", "page"=>"2", "_dc"=>"1245772633451", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772633451&start=0&limit=5&page=2]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 12:57:16) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1245772636583", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245772636583&start=0&limit=5&page=1]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 13:02:47) [GET]
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 56ms (View: 52, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:02:50) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245772970042", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772970042&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:02:52) [GET]
+  Parameters: {"start"=>"5", "page"=>"5", "_dc"=>"1245772972697", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772972697&start=5&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:02:53) [GET]
+  Parameters: {"start"=>"10", "page"=>"10", "_dc"=>"1245772973490", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 90ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245772973490&start=10&limit=5&page=10]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 13:06:36) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 123ms (View: 115, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:06:42) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245773202647", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 8ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773202647&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:06:50) [GET]
+  Parameters: {"start"=>"5", "page"=>"1", "_dc"=>"1245773210136", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773210136&start=5&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:06:51) [GET]
+  Parameters: {"start"=>"10", "page"=>"0.5", "_dc"=>"1245773211606", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773211606&start=10&limit=5&page=0.5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:06:52) [GET]
+  Parameters: {"start"=>"15", "page"=>"0.3333333333333333", "_dc"=>"1245773212574", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773212574&start=15&limit=5&page=0.3333333333333333]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:06:53) [GET]
+  Parameters: {"start"=>"20", "page"=>"0.25", "_dc"=>"1245773213407", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773213407&start=20&limit=5&page=0.25]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:06:54) [GET]
+  Parameters: {"start"=>"25", "page"=>"0.2", "_dc"=>"1245773214597", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773214597&start=25&limit=5&page=0.2]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:06:55) [GET]
+  Parameters: {"start"=>"30", "page"=>"0.16666666666666666", "_dc"=>"1245773215473", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773215473&start=30&limit=5&page=0.16666666666666666]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:06:57) [GET]
+  Parameters: {"start"=>"25", "page"=>"0.2", "_dc"=>"1245773217945", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773217945&start=25&limit=5&page=0.2]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:06:59) [GET]
+  Parameters: {"start"=>"20", "page"=>"0.25", "_dc"=>"1245773219520", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773219520&start=20&limit=5&page=0.25]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:07:01) [GET]
+  Parameters: {"start"=>"15", "page"=>"0.3333333333333333", "_dc"=>"1245773221140", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773221140&start=15&limit=5&page=0.3333333333333333]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:07:01) [GET]
+  Parameters: {"start"=>"10", "page"=>"0.5", "_dc"=>"1245773221897", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773221897&start=10&limit=5&page=0.5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:07:02) [GET]
+  Parameters: {"start"=>"5", "page"=>"1", "_dc"=>"1245773222425", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773222425&start=5&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:07:03) [GET]
+  Parameters: {"start"=>"0", "page"=>"Infinity", "_dc"=>"1245773222965", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773222965&start=0&limit=5&page=Infinity]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:07:10) [GET]
+  Parameters: {"start"=>"5", "page"=>"1", "_dc"=>"1245773229951", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773229951&start=5&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:07:13) [GET]
+  Parameters: {"start"=>"10", "page"=>"0.5", "_dc"=>"1245773233045", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773233045&start=10&limit=5&page=0.5]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 13:10:09) [GET]
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 130ms (View: 124, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:14) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245773414582", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773414582&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:17) [GET]
+  Parameters: {"start"=>"5", "page"=>"1", "_dc"=>"1245773417446", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773417446&start=5&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:19) [GET]
+  Parameters: {"start"=>"10", "page"=>"2", "_dc"=>"1245773419510", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773419510&start=10&limit=5&page=2]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:20) [GET]
+  Parameters: {"start"=>"15", "page"=>"3", "_dc"=>"1245773420513", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773420513&start=15&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:21) [GET]
+  Parameters: {"start"=>"20", "page"=>"4", "_dc"=>"1245773421329", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 9ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773421329&start=20&limit=5&page=4]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:22) [GET]
+  Parameters: {"start"=>"25", "page"=>"5", "_dc"=>"1245773422906", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773422906&start=25&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:23) [GET]
+  Parameters: {"start"=>"25", "page"=>"5", "_dc"=>"1245773422991", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773422991&start=25&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:23) [GET]
+  Parameters: {"start"=>"25", "page"=>"5", "_dc"=>"1245773423088", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773423088&start=25&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:23) [GET]
+  Parameters: {"start"=>"25", "page"=>"5", "_dc"=>"1245773423208", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773423208&start=25&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:23) [GET]
+  Parameters: {"start"=>"30", "page"=>"6", "_dc"=>"1245773423802", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 4ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773423802&start=30&limit=5&page=6]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:26) [GET]
+  Parameters: {"start"=>"25", "page"=>"7", "_dc"=>"1245773426264", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773426264&start=25&limit=5&page=7]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:27) [GET]
+  Parameters: {"start"=>"20", "page"=>"6", "_dc"=>"1245773427625", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773427625&start=20&limit=5&page=6]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:28) [GET]
+  Parameters: {"start"=>"15", "page"=>"5", "_dc"=>"1245773428366", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773428366&start=15&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:28) [GET]
+  Parameters: {"start"=>"10", "page"=>"4", "_dc"=>"1245773428804", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773428804&start=10&limit=5&page=4]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:29) [GET]
+  Parameters: {"start"=>"5", "page"=>"3", "_dc"=>"1245773429053", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773429053&start=5&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:10:29) [GET]
+  Parameters: {"start"=>"0", "page"=>"2", "_dc"=>"1245773429259", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773429259&start=0&limit=5&page=2]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 13:11:14) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 183ms (View: 176, DB: 1) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:16) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245773476935", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773476935&start=0&limit=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:18) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1245773478827", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773478827&start=5&limit=5&page=2]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:20) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1245773480641", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773480641&start=10&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:21) [GET]
+  Parameters: {"start"=>"15", "page"=>"4", "_dc"=>"1245773481268", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773481268&start=15&limit=5&page=4]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:26) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1245773486310", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773486310&start=10&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:29) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1245773489895", "limit"=>"5"}
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 19ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773489895&start=0&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:32) [GET]
+  Parameters: {"start"=>"30", "page"=>"7", "_dc"=>"1245773492058", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773492058&start=30&limit=5&page=7]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:33) [GET]
+  Parameters: {"start"=>"25", "page"=>"6", "_dc"=>"1245773493804", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773493804&start=25&limit=5&page=6]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:35) [GET]
+  Parameters: {"start"=>"20", "page"=>"5", "_dc"=>"1245773495292", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773495292&start=20&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:35) [GET]
+  Parameters: {"start"=>"20", "page"=>"5", "_dc"=>"1245773495360", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773495360&start=20&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:35) [GET]
+  Parameters: {"start"=>"20", "page"=>"5", "_dc"=>"1245773495452", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773495452&start=20&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:35) [GET]
+  Parameters: {"start"=>"20", "page"=>"5", "_dc"=>"1245773495548", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773495548&start=20&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:35) [GET]
+  Parameters: {"start"=>"15", "page"=>"4", "_dc"=>"1245773495937", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773495937&start=15&limit=5&page=4]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:36) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1245773496593", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773496593&start=10&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:37) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1245773497017", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773497017&start=5&limit=5&page=2]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:37) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1245773497283", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 8ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773497283&start=0&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:37) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1245773497468", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 9ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773497468&start=0&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:39) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1245773499760", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773499760&start=0&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:41) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1245773501273", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773501273&start=5&limit=5&page=2]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:41) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1245773501761", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 8ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773501761&start=10&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:43) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1245773502949", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 15ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773502949&start=10&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:11:43) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1245773503544", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773503544&start=10&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:12:35) [GET]
+  Parameters: {"start"=>"15", "page"=>"4", "_dc"=>"1245773555853", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773555853&start=15&limit=5&page=4]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:12:37) [GET]
+  Parameters: {"start"=>"15", "page"=>"4", "_dc"=>"1245773557103", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773557103&start=15&limit=5&page=4]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:12:46) [GET]
+  Parameters: {"start"=>"20", "page"=>"5", "_dc"=>"1245773566513", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773566513&start=20&limit=5&page=5]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:12:47) [GET]
+  Parameters: {"start"=>"25", "page"=>"6", "_dc"=>"1245773567393", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 6ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773567393&start=25&limit=5&page=6]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:12:49) [GET]
+  Parameters: {"start"=>"30", "page"=>"7", "_dc"=>"1245773569393", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 8ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773569393&start=30&limit=5&page=7]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:12:54) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1245773574349", "limit"=>"5"}
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773574349&start=0&limit=5&page=1]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:12:59) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1245773579670", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773579670&start=5&limit=5&page=2]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:13:01) [GET]
+  Parameters: {"start"=>"30", "page"=>"7", "_dc"=>"1245773581280", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 30, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773581280&start=30&limit=5&page=7]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:13:04) [GET]
+  Parameters: {"start"=>"25", "page"=>"6", "_dc"=>"1245773584318", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 25, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 22ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773584318&start=25&limit=5&page=6]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:13:09) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1245773589825", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773589825&start=5&limit=5&page=2]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:14:57) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1245773697590", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773697590&start=10&limit=5&page=3]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:14:58) [GET]
+  Parameters: {"start"=>"15", "page"=>"4", "_dc"=>"1245773698924", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 15, 5[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 12ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773698924&start=15&limit=5&page=4]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:14:59) [GET]
+  Parameters: {"start"=>"20", "page"=>"5", "_dc"=>"1245773699755", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 20, 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 1) | 200 OK [http://localhost/projects.json?_dc=1245773699755&start=20&limit=5&page=5]
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-23 13:15:50) [GET]
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 60ms (View: 57, DB: 0) | 200 OK [http://localhost/projects]
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-23 13:15:52) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1245773752268", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 7ms (View: 0, DB: 0) | 200 OK [http://localhost/projects.json?_dc=1245773752268&start=0&limit=5&page=1]

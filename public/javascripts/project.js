@@ -1,3 +1,15 @@
+Ext.override(Ext.PagingToolbar, {
+    doLoad : function(start){
+        var o = {}, pn = this.paramNames;
+        o[pn.start] = start;
+        o[pn.limit] = this.pageSize;
+        o['page'] = Math.ceil((start+this.pageSize)/this.pageSize);
+        if(this.fireEvent('beforechange', this, o) !== false){
+            this.store.load({params:o});
+        }
+    }
+});
+
 var Project = function() {
 
     Ext.Ajax.method = 'GET';
@@ -91,7 +103,7 @@ var Project = function() {
                 }]
             })
         });
-        store.load({params: {start: 0, limit: 5} });
+        store.load({params: {start: 0, limit: 5, page:1} });
       }
     };
 

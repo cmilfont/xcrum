@@ -817,3 +817,92 @@
   [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
   [4;36;1mProject Create (0.4ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-17 21:41:16', '2009-06-17 21:41:16')[0m
   [4;35;1mSQL (42.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProject Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (17.5ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-19 20:03:09', '2009-06-19 20:03:09')[0m
+  [4;35;1mItem Create (0.3ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-19 20:03:09', 15, '2009-06-19 20:03:09', 'Exemplo de funcionalidade')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (16.2ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (`items`.project_id = 15) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.4ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('teste', '2009-06-19 20:03:09', '2009-06-19 20:03:09')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.3ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-19 20:03:09', '2009-06-19 20:03:09')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.4ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-19 20:32:25', '2009-06-19 20:32:25')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProject Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.4ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-19 20:32:53', '2009-06-19 20:32:53')[0m
+  [4;35;1mItem Create (0.5ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-19 20:32:53', 19, '2009-06-19 20:32:53', 'Exemplo de funcionalidade')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (`items`.project_id = 19) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.6ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-19 21:24:10', '2009-06-19 21:24:10')[0m
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-19 21:24:10', 20, '2009-06-19 21:24:10', 'Exemplo de funcionalidade')[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (`items`.project_id = 20) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.4ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-19 22:43:01', '2009-06-19 22:43:01')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.4ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-19 22:45:41', '2009-06-19 22:45:41')[0m
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-19 22:45:41', 22, '2009-06-19 22:45:41', 'Exemplo de funcionalidade')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (`items`.project_id = 22) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProject Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (13.5ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-22 19:28:26', '2009-06-22 19:28:26')[0m
+  [4;35;1mItem Create (0.7ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-22 19:28:26', 15, '2009-06-22 19:28:26', 'Exemplo de funcionalidade')[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (11.6ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (`items`.project_id = 15) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.4ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('teste', '2009-06-22 19:28:26', '2009-06-22 19:28:26')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.3ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-22 19:28:26', '2009-06-22 19:28:26')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProject Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.4ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-22 19:44:16', '2009-06-22 19:44:16')[0m
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-22 19:44:16', 15, '2009-06-22 19:44:16', 'Exemplo de funcionalidade')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (`items`.project_id = 15) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (21.6ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('teste', '2009-06-22 19:44:16', '2009-06-22 19:44:16')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.3ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-22 19:44:17', '2009-06-22 19:44:17')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProject Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.4ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-22 19:54:46', '2009-06-22 19:54:46')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mProject Columns (7.1ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.5ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Xcrum', '2009-06-22 19:58:34', '2009-06-22 19:58:34')[0m
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-22 19:58:34', 19, '2009-06-22 19:58:34', 'Exemplo de funcionalidade')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSELECT count(*) AS count_all FROM `items` WHERE (`items`.project_id = 19) [0m

@@ -1,0 +1,11 @@
+<% form_for @project, :builder => XcrumFormBuilder do |f| %>
+
+    <%= f.error_messages %>
+
+    <%= f.text_field :name %>
+    <%= f.text_field :created_at %>
+    <%= f.text_field :updated_at %>
+
+    <%= f.submit %>
+
+<% end %>

@@ -4703,3 +4703,944 @@ DEPRECATION WARNING: Disabling sessions for a single controller has been depreca
   [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
   [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
   [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (60.9ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-18 10:40:50) [GET]
+  [4;35;1mProject Load (173.4ms)[0m   [0mSELECT * FROM `projects` [0m
+  [4;36;1mProject Columns (20.5ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (35.8ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Rendering template within layouts/projects
+Rendering projects/index
+Completed in 389ms (View: 120, DB: 291) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:40:53) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332453723", "limit"=>"5"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 500ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332453723&start=0&limit=5]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:00) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;35;1mProject Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (16.9ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:00', '2009-06-18 13:41:00')[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:00', 2, '2009-06-18 13:41:00', 'teste')[0m
+  [4;36;1mSQL (20.1ms)[0m   [0;1mCOMMIT[0m
+Completed in 127ms (View: 4, DB: 44) | 201 Created [http://localhost/projects.json]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:01) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332461693", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 17ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332461693&start=0&limit=5]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:08) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mProject Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mItem Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.5ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.8ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:08', '2009-06-18 13:41:08')[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:08', 3, '2009-06-18 13:41:08', 'teste')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Completed in 71ms (View: 4, DB: 9) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:08) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332468450", "limit"=>"5"}
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 44ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1245332468450&start=0&limit=5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:09) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;35;1mProject Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.6ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:09', '2009-06-18 13:41:09')[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:09', 4, '2009-06-18 13:41:09', 'teste')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+Completed in 69ms (View: 4, DB: 9) | 201 Created [http://localhost/projects.json]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:09) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332469629", "limit"=>"5"}
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 35ms (View: 0, DB: 5) | 200 OK [http://localhost/projects.json?_dc=1245332469629&start=0&limit=5]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:10) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mProject Columns (6.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mItem Columns (6.9ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (4.8ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:10', '2009-06-18 13:41:10')[0m
+  [4;36;1mItem Create (9.8ms)[0m   [0;1mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:10', 5, '2009-06-18 13:41:10', 'teste')[0m
+  [4;35;1mSQL (17.5ms)[0m   [0mCOMMIT[0m
+Completed in 164ms (View: 4, DB: 47) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:10) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;35;1mProject Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.6ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:11', '2009-06-18 13:41:11')[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:11', 6, '2009-06-18 13:41:11', 'teste')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+Completed in 66ms (View: 4, DB: 9) | 201 Created [http://localhost/projects.json]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:11) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mItem Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.4ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:11', '2009-06-18 13:41:11')[0m
+  [4;36;1mItem Create (0.3ms)[0m   [0;1mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:11', 7, '2009-06-18 13:41:11', 'teste')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Completed in 31ms (View: 2, DB: 5) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:11) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;35;1mProject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.3ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:11', '2009-06-18 13:41:11')[0m
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:11', 8, '2009-06-18 13:41:11', 'teste')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Completed in 31ms (View: 2, DB: 5) | 201 Created [http://localhost/projects.json]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:11) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mItem Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.3ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:11', '2009-06-18 13:41:11')[0m
+  [4;36;1mItem Create (0.3ms)[0m   [0;1mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:11', 9, '2009-06-18 13:41:11', 'teste')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Completed in 30ms (View: 2, DB: 4) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:11) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.4ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:11', '2009-06-18 13:41:11')[0m
+  [4;35;1mItem Create (0.3ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:11', 10, '2009-06-18 13:41:11', 'teste')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCOMMIT[0m
+Completed in 123ms (View: 2, DB: 5) | 201 Created [http://localhost/projects.json]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:11) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mItem Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.3ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:11', '2009-06-18 13:41:11')[0m
+  [4;36;1mItem Create (0.3ms)[0m   [0;1mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:11', 11, '2009-06-18 13:41:11', 'teste')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Completed in 34ms (View: 2, DB: 5) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:12) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;35;1mProject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.4ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:12', '2009-06-18 13:41:12')[0m
+  [4;35;1mItem Create (0.4ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:12', 12, '2009-06-18 13:41:12', 'teste')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCOMMIT[0m
+Completed in 31ms (View: 2, DB: 5) | 201 Created [http://localhost/projects.json]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:12) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332471917", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 24ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332471917&start=0&limit=5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:12) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332471971", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 18ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332471971&start=0&limit=5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:12) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332472186", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 18ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332472186&start=0&limit=5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:12) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332472243", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 19ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332472243&start=0&limit=5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:12) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332472299", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 18ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332472299&start=0&limit=5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:12) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332472470", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 17ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332472470&start=0&limit=5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:12) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332472519", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 21ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332472519&start=0&limit=5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:12) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332472577", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 17ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332472577&start=0&limit=5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:13) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mProject Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mItem Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.4ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:13', '2009-06-18 13:41:13')[0m
+  [4;36;1mItem Create (0.3ms)[0m   [0;1mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:13', 13, '2009-06-18 13:41:13', 'teste')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Completed in 116ms (View: 88, DB: 5) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:13) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332473788", "limit"=>"5"}
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 39ms (View: 0, DB: 6) | 200 OK [http://localhost/projects.json?_dc=1245332473788&start=0&limit=5]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:16) [GET]
+  Parameters: {"start"=>"5", "_dc"=>"1245332476486", "limit"=>"5"}
+  [4;35;1mProject Load (1.1ms)[0m   [0mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;36;1mProject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 36ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1245332476486&start=5&limit=5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:17) [GET]
+  Parameters: {"start"=>"10", "_dc"=>"1245332477382", "limit"=>"5"}
+  [4;35;1mProject Load (1.0ms)[0m   [0mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;36;1mProject Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 34ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1245332477382&start=10&limit=5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:20) [GET]
+  Parameters: {"start"=>"5", "_dc"=>"1245332480094", "limit"=>"5"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;36;1mProject Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 37ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1245332480094&start=5&limit=5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:21) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332481286", "limit"=>"5"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 37ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1245332481286&start=0&limit=5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-18 10:41:33) [DELETE]
+  Parameters: {"id"=>"4"}
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (20.3ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 4) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Destroy (90.5ms)[0m   [0;1mDELETE FROM `projects` WHERE `id` = 4[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+Completed in 330ms (View: 36, DB: 115) | 200 OK [http://localhost/projects/4.json]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:33) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332493617", "limit"=>"5"}
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 39ms (View: 0, DB: 5) | 200 OK [http://localhost/projects.json?_dc=1245332493617&start=0&limit=5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-18 10:41:50) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mItem Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Create (0.7ms)[0m   [0;1mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-18 13:41:50', '2009-06-18 13:41:50')[0m
+  [4;35;1mItem Create (0.6ms)[0m   [0mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-18 13:41:50', 14, '2009-06-18 13:41:50', 'teste')[0m
+  [4;36;1mSQL (16.4ms)[0m   [0;1mCOMMIT[0m
+Completed in 81ms (View: 4, DB: 24) | 201 Created [http://localhost/projects.json]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:50) [GET]
+  Parameters: {"start"=>"0", "_dc"=>"1245332510208", "limit"=>"5"}
+  [4;36;1mProject Load (0.9ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 36ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1245332510208&start=0&limit=5]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-18 10:41:52) [GET]
+  Parameters: {"start"=>"10", "_dc"=>"1245332512939", "limit"=>"5"}
+  [4;36;1mProject Load (0.6ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 17ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1245332512939&start=10&limit=5]
+  [4;36;1mSQL (20.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (12.9ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (12.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (47.9ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (273.5ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (22.1ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (114.6ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (22.3ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (11.8ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (18.5ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (10.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (52.8ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (26.0ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (18.1ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (15.7ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (3.9ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (15.9ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (5.2ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (5.5ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (3.4ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (28.4ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (13.0ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (7.5ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (6.5ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (31.3ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (11.3ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (3.0ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (7.1ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (8.3ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (7.2ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (5.6ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (35.5ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (5.9ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (4.1ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (26.3ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (8.0ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (6.1ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (5.8ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (3.9ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (15.8ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (11.0ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (4.1ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (5.7ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW FULL TABLES WHERE Table_type = 'BASE TABLE'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW CREATE TABLE `items`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW CREATE TABLE `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW CREATE TABLE `schema_migrations`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW CREATE TABLE `users`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mSQL (18.6ms)[0m   [0mDROP DATABASE IF EXISTS `xcrum_test`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mCREATE DATABASE `xcrum_test` DEFAULT CHARACTER SET `utf8`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET foreign_key_checks = 0[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCREATE TABLE `items` (
+ `id` int(11) NOT NULL auto_increment,
+ `description` varchar(255) default NULL,
+ `project_id` int(11) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mCREATE TABLE `projects` (
+ `id` int(11) NOT NULL auto_increment,
+ `name` varchar(255) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (16.1ms)[0m   [0mCREATE TABLE `schema_migrations` (
+ `version` varchar(255) NOT NULL,
+ UNIQUE KEY `unique_schema_migrations` (`version`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;[0m
+  [4;36;1mSQL (4.0ms)[0m   [0;1mCREATE TABLE `users` (
+ `id` int(11) NOT NULL auto_increment,
+ `login` varchar(40) default NULL,
+ `name` varchar(100) default '',
+ `email` varchar(100) default NULL,
+ `crypted_password` varchar(40) default NULL,
+ `salt` varchar(40) default NULL,
+ `created_at` datetime default NULL,
+ `updated_at` datetime default NULL,
+ `remember_token` varchar(40) default NULL,
+ `remember_token_expires_at` datetime default NULL,
+ PRIMARY KEY (`id`),
+ UNIQUE KEY `index_users_on_login` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090513213438');[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20090603190217');[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090610202931');[0m
