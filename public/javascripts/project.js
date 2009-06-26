@@ -14,7 +14,6 @@ var Project = function() {
 
     Ext.Ajax.method = 'GET';
 
-    var grid_id = "project_grid";
     var store = new Ext.data.Store({
                 url: 'projects.json',
                 reader: new Ext.data.JsonReader({
@@ -70,10 +69,13 @@ var Project = function() {
         }
     };
 
+    var grid_id = "project_grid";
+
     return {
       init: function() {
+		console.log("teste " + grid_id);
         grid = new Ext.grid.GridPanel({
-            renderTo:grid_id, autoShow:true,
+            renderTo:grid_id, autoShow:true, width:750,height:250,
             store: store,
             columns: [
                 {id:'id', header: "id", width: 200, sortable: true, dataIndex: 'id'},
@@ -89,7 +91,7 @@ var Project = function() {
             ],
             viewConfig: {forceFit: true},
             sm: new Ext.grid.RowSelectionModel({singleSelect:true}),
-            width:600,height:300,frame:true,title:'Projects',iconCls:'icon-grid',
+           frame:true,title:'Projects',iconCls:'icon-grid',
             bbar: new Ext.PagingToolbar({
                 pageSize:5,store:store,displayInfo: true,
                 displayMsg: 'Exibindo o resultado: {0} a {1} de {2} registros',
@@ -108,4 +110,4 @@ var Project = function() {
     };
 
 }();
-Ext.onReady(Project.init);
+

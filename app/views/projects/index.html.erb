@@ -1,12 +1,15 @@
-<script type="text/javascript" src="/javascripts/project.js"></script>
 <h1>Listing projects</h1>
+
+<script type="text/javascript">
+Ext.onReady(Project.init);
+</script>
+
+  <div id="project_grid"></div>
 
 <table>
   <tr>
     <th>Name</th>
   </tr>
-
-  <div id="project_grid"></div>
 
 <% for project in @projects %>
   <tr>
@@ -21,3 +24,4 @@
 <br />
 
 <%= link_to 'New project', new_project_path %>
+

@@ -6231,3 +6231,1372 @@ Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 11:10:1
   [4;35;1mProject Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
   [4;36;1mSQL (0.9ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
 Completed in 29ms (View: 0, DB: 5) | 200 OK [http://localhost/projects.json?_dc=1246025413178&start=5&limit=5&page=2]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:22:41) [GET]
+  [4;35;1mUser Columns (15.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (6.7ms)
+Rendered home/_home (6.7ms)
+Rendered home/_footer (1.8ms)
+Completed in 227ms (View: 80, DB: 16) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-06-26 11:28:12) [GET]
+Redirected to http://localhost:3000/
+Completed in 29ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:28:12) [GET]
+Redirected to http://localhost:3000/login
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-06-26 11:28:12) [GET]
+Rendering sessions/new
+Completed in 147ms (View: 139, DB: 0) | 200 OK [http://localhost/login]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-06-26 11:28:21) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"/efcAkQNLZf5UPp3Wv1sRMYtcrndm1OEuTZnh1Zo61U=", "login"=>"cmilfont", "password"=>"fuhrer"}
+  [4;35;1mUser Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`login` = 'cmilfont') LIMIT 1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 52ms (DB: 5) | 302 Found [http://localhost/session]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:28:21) [GET]
+  [4;36;1mUser Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.1ms)
+Rendered home/_home (0.4ms)
+Rendered home/_footer (0.4ms)
+Completed in 61ms (View: 16, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2009-06-26 11:32:50) [GET]
+Redirected to http://localhost:3000/
+Completed in 29ms (DB: 0) | 302 Found [http://localhost/logout]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:32:50) [GET]
+Redirected to http://localhost:3000/login
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2009-06-26 11:32:51) [GET]
+Rendering sessions/new
+Completed in 13ms (View: 5, DB: 0) | 200 OK [http://localhost/login]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2009-06-26 11:32:55) [POST]
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"mezrtJTPVQc+BftcryupAV/u2sC7JrnHmH4x8mQbO2w=", "login"=>"cmilfont", "password"=>"fuhrer"}
+  [4;36;1mUser Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`login` = 'cmilfont') LIMIT 1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed in 52ms (DB: 5) | 302 Found [http://localhost/session]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:32:55) [GET]
+  [4;35;1mUser Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.1ms)
+Rendered home/_home (5.5ms)
+Rendered home/_footer (0.3ms)
+Completed in 66ms (View: 27, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:33:05) [GET]
+  [4;36;1mProject Load (1.6ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 142ms (View: 126, DB: 4) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:33:34) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 74ms (View: 53, DB: 4) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:33:50) [GET]
+  [4;36;1mUser Columns (4.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.1ms)
+Rendered home/_home (5.8ms)
+Rendered home/_footer (0.4ms)
+Completed in 69ms (View: 29, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:33:57) [GET]
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (29.5ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 101ms (View: 57, DB: 30) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:33:59) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 64ms (View: 48, DB: 3) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:34:00) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 63ms (View: 48, DB: 3) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:34:28) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 65ms (View: 49, DB: 3) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:35:06) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 64ms (View: 48, DB: 4) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:35:24) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 34ms (View: 25, DB: 2) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:35:34) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 59ms (View: 44, DB: 3) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:36:43) [GET]
+  [4;36;1mUser Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.0ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.4ms)
+Completed in 54ms (View: 15, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:38:03) [GET]
+  [4;35;1mUser Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.2ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.4ms)
+Completed in 210ms (View: 17, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:38:07) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 88ms (View: 71, DB: 3) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:39:36) [GET]
+  [4;35;1mUser Columns (3.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.5ms)
+Rendered home/_home (0.4ms)
+Rendered home/_footer (0.4ms)
+Completed in 57ms (View: 16, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:39:41) [GET]
+  [4;36;1mProject Load (6.0ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 44ms (View: 30, DB: 8) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:40:51) [GET]
+  [4;35;1mUser Columns (3.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.0ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.3ms)
+Completed in 84ms (View: 47, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:40:57) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 63ms (View: 48, DB: 3) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:44:35) [GET]
+  [4;35;1mUser Columns (4.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (2.9ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.4ms)
+Completed in 54ms (View: 14, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:44:45) [GET]
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 201ms (View: 185, DB: 3) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:48:18) [GET]
+  [4;35;1mUser Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.2ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.4ms)
+Completed in 55ms (View: 15, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:48:23) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 62ms (View: 47, DB: 3) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:51:11) [GET]
+  [4;35;1mUser Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.3ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.3ms)
+Completed in 56ms (View: 15, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:51:16) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 65ms (View: 49, DB: 4) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:51:40) [GET]
+  [4;35;1mUser Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.3ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.4ms)
+Completed in 55ms (View: 16, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:52:16) [GET]
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (1.7ms)
+Rendered home/_home (0.2ms)
+Rendered home/_footer (0.2ms)
+Completed in 28ms (View: 7, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:54:21) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 68ms (View: 51, DB: 3) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 11:54:21) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028061711", "limit"=>"5"}
+  [4;36;1mProject Load (18.7ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 339ms (View: 0, DB: 21) | 200 OK [http://localhost/projects.json?_dc=1246028061711&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:54:47) [GET]
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (13.1ms)
+Rendered home/_home (0.2ms)
+Rendered home/_footer (0.2ms)
+Completed in 61ms (View: 19, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:55:27) [GET]
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (1.5ms)
+Rendered home/_home (0.2ms)
+Rendered home/_footer (0.2ms)
+Completed in 28ms (View: 7, DB: 2) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:56:09) [GET]
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 32ms (View: 24, DB: 2) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 11:56:09) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028169218", "limit"=>"5"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028169218&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:56:21) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 70ms (View: 53, DB: 4) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 11:56:22) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028182140", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 40ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028182140&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:56:29) [GET]
+  [4;36;1mUser Columns (3.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.2ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.4ms)
+Completed in 54ms (View: 15, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:56:51) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 65ms (View: 49, DB: 4) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 11:56:51) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028211400", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 187ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028211400&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:56:54) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 66ms (View: 49, DB: 3) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 11:56:55) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028215084", "limit"=>"5"}
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 27ms (View: 0, DB: 3) | 200 OK [http://localhost/projects.json?_dc=1246028215084&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:57:20) [GET]
+  [4;35;1mUser Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.7ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.3ms)
+Completed in 54ms (View: 15, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:57:37) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 66ms (View: 49, DB: 5) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:57:56) [GET]
+  [4;35;1mUser Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (8.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.2ms)
+Rendered home/_home (0.4ms)
+Rendered home/_footer (0.3ms)
+Completed in 80ms (View: 16, DB: 12) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:58:08) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 107ms (View: 70, DB: 4) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 11:58:09) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028288987", "limit"=>"5"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 27ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028288987&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 11:59:03) [GET]
+  [4;35;1mUser Columns (4.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.1ms)
+Rendered home/_home (150.3ms)
+Rendered home/_footer (0.9ms)
+Completed in 206ms (View: 166, DB: 5) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:59:34) [GET]
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 74ms (View: 57, DB: 3) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 11:59:34) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028374726", "limit"=>"5"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 30ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028374726&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 11:59:39) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (3.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 64ms (View: 49, DB: 4) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 11:59:39) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028379284", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 28ms (View: 0, DB: 3) | 200 OK [http://localhost/projects.json?_dc=1246028379284&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 12:00:21) [GET]
+  [4;36;1mUser Columns (8.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.0ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.4ms)
+Completed in 67ms (View: 22, DB: 10) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:00:26) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 63ms (View: 47, DB: 4) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:00:27) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028427144", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028427144&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:00:36) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1246028436617", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 189ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028436617&start=5&limit=5&page=2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:00:41) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1246028441097", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mProject Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 26ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028441097&start=10&limit=5&page=3]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:00:45) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1246028445520", "limit"=>"5"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 12ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028445520&start=10&limit=5&page=3]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:00:47) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028447497", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 28ms (View: 0, DB: 3) | 200 OK [http://localhost/projects.json?_dc=1246028447497&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:00:52) [GET]
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (4.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 73ms (View: 56, DB: 5) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:00:52) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028452717", "limit"=>"5"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028452717&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:00:55) [GET]
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 33ms (View: 24, DB: 2) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:00:55) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028455761", "limit"=>"5"}
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028455761&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:00:56) [GET]
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 69ms (View: 54, DB: 3) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:00:57) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028457394", "limit"=>"5"}
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (3.1ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 29ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028457394&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:00:58) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 64ms (View: 48, DB: 4) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:00:59) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028459210", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 28ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028459210&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:01:00) [GET]
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 32ms (View: 24, DB: 2) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:01:00) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028460522", "limit"=>"5"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028460522&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:01:27) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 68ms (View: 52, DB: 3) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:01:28) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028488937", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028488937&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:04:51) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1246028691575", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 26ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028691575&start=5&limit=5&page=2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:04:53) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028693053", "limit"=>"5"}
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 26ms (View: 0, DB: 3) | 200 OK [http://localhost/projects.json?_dc=1246028693053&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 12:05:36) [GET]
+  [4;36;1mUser Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.6ms)
+Rendered home/_home (0.4ms)
+Rendered home/_footer (0.4ms)
+Completed in 57ms (View: 16, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:05:42) [GET]
+  [4;35;1mProject Load (0.3ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 62ms (View: 47, DB: 3) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:05:42) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028742776", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028742776&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 12:05:55) [GET]
+  [4;36;1mUser Columns (3.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.0ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.4ms)
+Completed in 61ms (View: 21, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 12:05:55) [GET]
+  [4;35;1mUser Columns (3.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.1ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (1.7ms)
+Completed in 76ms (View: 27, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:06:03) [GET]
+  [4;36;1mProject Load (0.3ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 64ms (View: 48, DB: 3) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:06:05) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028764876", "limit"=>"5"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028764876&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 12:06:15) [GET]
+  [4;35;1mUser Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.2ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.4ms)
+Completed in 57ms (View: 15, DB: 4) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:06:22) [GET]
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 32ms (View: 24, DB: 2) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:06:23) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028783312", "limit"=>"5"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 14ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028783312&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 12:06:41) [GET]
+  [4;35;1mUser Columns (5.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (3.3ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.5ms)
+Completed in 62ms (View: 16, DB: 6) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 12:06:41) [GET]
+  [4;36;1mUser Columns (4.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (5.6ms)
+Rendered home/_home (0.3ms)
+Rendered home/_footer (0.4ms)
+Completed in 82ms (View: 29, DB: 5) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:06:50) [GET]
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 63ms (View: 47, DB: 3) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:06:51) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028810984", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 28ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028810984&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-06-26 12:07:28) [GET]
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+Rendering home/index
+Rendered home/_header (1.8ms)
+Rendered home/_home (0.2ms)
+Rendered home/_footer (0.2ms)
+Completed in 28ms (View: 8, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:07:35) [GET]
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;36;1mProject Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 65ms (View: 47, DB: 3) | 200 OK [http://localhost/projects]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:07:36) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028856552", "limit"=>"5"}
+  [4;36;1mProject Load (0.2ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 13ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028856552&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:07:40) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1246028860039", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mProject Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 25ms (View: 0, DB: 3) | 200 OK [http://localhost/projects.json?_dc=1246028860039&start=10&limit=5&page=3]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:07:44) [DELETE]
+  Parameters: {"id"=>"12"}
+  [4;35;1mProject Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (40.3ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 12) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Destroy (73.0ms)[0m   [0;1mDELETE FROM `projects` WHERE `id` = 12[0m
+  [4;35;1mSQL (31.1ms)[0m   [0mCOMMIT[0m
+Completed in 167ms (View: 2, DB: 148) | 200 OK [http://localhost/projects/12.json]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:07:44) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1246028864694", "limit"=>"5"}
+  [4;35;1mProject Load (1.0ms)[0m   [0mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;36;1mProject Columns (2.9ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 25ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028864694&start=10&limit=5&page=3]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:07:46) [DELETE]
+  Parameters: {"id"=>"14"}
+  [4;36;1mProject Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 14) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Destroy (0.8ms)[0m   [0mDELETE FROM `projects` WHERE `id` = 14[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Completed in 24ms (View: 2, DB: 6) | 200 OK [http://localhost/projects/14.json]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:07:47) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1246028867013", "limit"=>"5"}
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mProject Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 22ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028867013&start=10&limit=5&page=3]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:07:48) [DELETE]
+  Parameters: {"id"=>"15"}
+  [4;35;1mProject Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (1.0ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 15) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Destroy (0.9ms)[0m   [0;1mDELETE FROM `projects` WHERE `id` = 15[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Completed in 25ms (View: 3, DB: 6) | 200 OK [http://localhost/projects/15.json]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:07:49) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1246028868891", "limit"=>"5"}
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;36;1mProject Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 172ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028868891&start=10&limit=5&page=3]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:07:51) [DELETE]
+  Parameters: {"id"=>"13"}
+  [4;36;1mProject Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 13) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Destroy (0.8ms)[0m   [0mDELETE FROM `projects` WHERE `id` = 13[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mCOMMIT[0m
+Completed in 24ms (View: 2, DB: 6) | 200 OK [http://localhost/projects/13.json]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:07:51) [GET]
+  Parameters: {"start"=>"10", "page"=>"3", "_dc"=>"1246028871803", "limit"=>"5"}
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 10, 5[0m
+  [4;35;1mProject Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 26ms (View: 0, DB: 5) | 200 OK [http://localhost/projects.json?_dc=1246028871803&start=10&limit=5&page=3]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:07:54) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1246028874507", "limit"=>"5"}
+  [4;36;1mProject Load (0.9ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mProject Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 30ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028874507&start=5&limit=5&page=2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:07:57) [DELETE]
+  Parameters: {"id"=>"9"}
+  [4;36;1mProject Columns (3.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 9) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Destroy (1.7ms)[0m   [0mDELETE FROM `projects` WHERE `id` = 9[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCOMMIT[0m
+Completed in 30ms (View: 2, DB: 7) | 200 OK [http://localhost/projects/9.json]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:07:57) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1246028877609", "limit"=>"5"}
+  [4;36;1mProject Load (1.8ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mProject Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 38ms (View: 0, DB: 5) | 200 OK [http://localhost/projects.json?_dc=1246028877609&start=5&limit=5&page=2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:08:00) [DELETE]
+  Parameters: {"id"=>"8"}
+  [4;35;1mProject Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.5ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 8) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Destroy (0.4ms)[0m   [0;1mDELETE FROM `projects` WHERE `id` = 8[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Completed in 12ms (View: 1, DB: 3) | 200 OK [http://localhost/projects/8.json]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:00) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1246028880384", "limit"=>"5"}
+  [4;35;1mProject Load (0.5ms)[0m   [0mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 13ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028880384&start=5&limit=5&page=2]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:08:02) [DELETE]
+  Parameters: {"id"=>"10"}
+  [4;36;1mProject Columns (2.8ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (1.0ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 10) [0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Destroy (0.9ms)[0m   [0mDELETE FROM `projects` WHERE `id` = 10[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCOMMIT[0m
+Completed in 25ms (View: 2, DB: 6) | 200 OK [http://localhost/projects/10.json]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:02) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1246028882508", "limit"=>"5"}
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mProject Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 22ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028882508&start=5&limit=5&page=2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:08:04) [DELETE]
+  Parameters: {"id"=>"11"}
+  [4;35;1mProject Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.9ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 11) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Destroy (0.8ms)[0m   [0;1mDELETE FROM `projects` WHERE `id` = 11[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Completed in 26ms (View: 2, DB: 6) | 200 OK [http://localhost/projects/11.json]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:04) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1246028884574", "limit"=>"5"}
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;36;1mProject Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 22ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028884574&start=5&limit=5&page=2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:08:06) [DELETE]
+  Parameters: {"id"=>"7"}
+  [4;36;1mProject Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 7) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Destroy (0.7ms)[0m   [0mDELETE FROM `projects` WHERE `id` = 7[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Completed in 23ms (View: 2, DB: 5) | 200 OK [http://localhost/projects/7.json]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:07) [GET]
+  Parameters: {"start"=>"5", "page"=>"2", "_dc"=>"1246028886859", "limit"=>"5"}
+  [4;36;1mProject Load (0.9ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 5, 5[0m
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 21ms (View: 0, DB: 5) | 200 OK [http://localhost/projects.json?_dc=1246028886859&start=5&limit=5&page=2]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:08) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028888702", "limit"=>"5"}
+  [4;36;1mProject Load (0.9ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `projects` [0m
+Completed in 28ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028888702&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:08:11) [DELETE]
+  Parameters: {"id"=>"6"}
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.6ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 6) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Destroy (0.5ms)[0m   [0mDELETE FROM `projects` WHERE `id` = 6[0m
+  [4;36;1mSQL (12.5ms)[0m   [0;1mCOMMIT[0m
+Completed in 25ms (View: 1, DB: 15) | 200 OK [http://localhost/projects/6.json]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:12) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028892056", "limit"=>"5"}
+  [4;36;1mProject Load (0.4ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 12ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028892056&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:08:13) [DELETE]
+  Parameters: {"id"=>"5"}
+  [4;35;1mProject Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 5) [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Destroy (0.7ms)[0m   [0;1mDELETE FROM `projects` WHERE `id` = 5[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Completed in 24ms (View: 2, DB: 6) | 200 OK [http://localhost/projects/5.json]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:13) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028893707", "limit"=>"5"}
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 24ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028893707&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-26 12:08:15) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mProject Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mItem Columns (2.7ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.8ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-26 15:08:16', '2009-06-26 15:08:16')[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-26 15:08:16', 16, '2009-06-26 15:08:16', 'teste')[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Completed in 98ms (View: 4, DB: 9) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:16) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028896128", "limit"=>"5"}
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 24ms (View: 0, DB: 3) | 200 OK [http://localhost/projects.json?_dc=1246028896128&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:08:19) [DELETE]
+  Parameters: {"id"=>"3"}
+  [4;36;1mProject Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mProject Load (0.7ms)[0m   [0mSELECT * FROM `projects` WHERE (`projects`.`id` = 3) [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Destroy (0.7ms)[0m   [0mDELETE FROM `projects` WHERE `id` = 3[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mCOMMIT[0m
+Completed in 22ms (View: 2, DB: 5) | 200 OK [http://localhost/projects/3.json]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:19) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028899244", "limit"=>"5"}
+  [4;36;1mProject Load (0.7ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 23ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028899244&start=0&limit=5&page=1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#destroy to json (for 127.0.0.1 at 2009-06-26 12:08:21) [DELETE]
+  Parameters: {"id"=>"16"}
+  [4;35;1mProject Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+  [4;36;1mProject Load (0.8ms)[0m   [0;1mSELECT * FROM `projects` WHERE (`projects`.`id` = 16) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mProject Destroy (0.7ms)[0m   [0;1mDELETE FROM `projects` WHERE `id` = 16[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Completed in 23ms (View: 2, DB: 6) | 200 OK [http://localhost/projects/16.json]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:22) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028902146", "limit"=>"5"}
+  [4;35;1mProject Load (0.4ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 11ms (View: 0, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028902146&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-26 12:08:23) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mProject Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mItem Columns (2.8ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.7ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-26 15:08:23', '2009-06-26 15:08:23')[0m
+  [4;36;1mItem Create (0.6ms)[0m   [0;1mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-26 15:08:23', 17, '2009-06-26 15:08:23', 'teste')[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCOMMIT[0m
+Completed in 61ms (View: 4, DB: 9) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:23) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028903622", "limit"=>"5"}
+  [4;35;1mProject Load (0.8ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 22ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028903622&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#create to json (for 127.0.0.1 at 2009-06-26 12:08:24) [POST]
+  Parameters: {"project"=>{"items"=>[{"id"=>1, "description"=>"teste"}], "name"=>"Milfont test", "items_attributes"=>[{"id"=>1, "description"=>"teste"}]}}
+  [4;36;1mProject Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+  [4;35;1mItem Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `items`[0m
+WARNING: Can't mass-assign these protected attributes: id
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mProject Create (0.7ms)[0m   [0mINSERT INTO `projects` (`name`, `created_at`, `updated_at`) VALUES('Milfont test', '2009-06-26 15:08:24', '2009-06-26 15:08:24')[0m
+  [4;36;1mItem Create (0.7ms)[0m   [0;1mINSERT INTO `items` (`created_at`, `project_id`, `updated_at`, `description`) VALUES('2009-06-26 15:08:24', 18, '2009-06-26 15:08:24', 'teste')[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCOMMIT[0m
+Completed in 65ms (View: 4, DB: 9) | 201 Created [http://localhost/projects.json]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:24) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028904735", "limit"=>"5"}
+  [4;35;1mProject Load (0.9ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (3.0ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 27ms (View: 0, DB: 4) | 200 OK [http://localhost/projects.json?_dc=1246028904735&start=0&limit=5&page=1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index (for 127.0.0.1 at 2009-06-26 12:08:26) [GET]
+  [4;36;1mProject Load (0.9ms)[0m   [0;1mSELECT * FROM `projects` LIMIT 0, 30[0m
+Rendering projects/index
+  [4;35;1mProject Columns (3.1ms)[0m   [0mSHOW FIELDS FROM `projects`[0m
+Completed in 37ms (View: 21, DB: 4) | 200 OK [http://localhost/projects]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /home/cmilfont/projetos/xcrum/app/controllers/application_controller.rb:13)
+
+
+Processing ProjectsController#index to json (for 127.0.0.1 at 2009-06-26 12:08:27) [GET]
+  Parameters: {"start"=>"0", "page"=>"1", "_dc"=>"1246028907063", "limit"=>"5"}
+  [4;35;1mProject Load (0.2ms)[0m   [0mSELECT * FROM `projects` LIMIT 0, 5[0m
+  [4;36;1mProject Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `projects`[0m
+Completed in 94ms (View: 10, DB: 2) | 200 OK [http://localhost/projects.json?_dc=1246028907063&start=0&limit=5&page=1]
