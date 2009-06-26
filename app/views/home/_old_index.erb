@@ -1,0 +1,10 @@
+<h1>Welcome</h1>
+
+<% if logged_in? %>
+	<%=h current_user.login %>
+	<%= link_to 'Logout', logout_path %>
+<% else %>
+	<%= link_to 'Login', login_path %>
+	<%= link_to 'Sign Up', signup_path %>
+<% end %>
+

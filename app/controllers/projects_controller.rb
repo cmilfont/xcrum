@@ -4,11 +4,14 @@ class ProjectsController < ApplicationController
   # GET /projects
   # GET /projects.xml
   def index
-    #ActiveRecord::Base.include_root_in_json = false
-    @projects = Project.find(:all, :offset => params[:start], :limit => params[:limit])
-    @dto = DataTransferObject.new
-    @dto.total = Project.count
-    @dto.results = @projects.to_a
+    #@projects = Project.find(:all, :offset => params[:start], :limit => params[:limit])
+    #@dto = DataTransferObject.new
+    #@dto.total = Project.count
+    #@dto.results = @projects.to_a
+	@projects = Project.paginate :page => params[:page], :per_page => params[:limit]
+	@dto = Hash.new
+	@dto[:total] = @projects.total_entries
+	@dto[:results] = @projects
 
     respond_to do |format|
       format.json { render :layout => false,
@@ -114,3 +117,4 @@ class ProjectsController < ApplicationController
     end
   end
 end
+
