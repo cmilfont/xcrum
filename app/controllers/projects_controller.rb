@@ -9,13 +9,11 @@ class ProjectsController < ApplicationController
     #@dto.total = Project.count
     #@dto.results = @projects.to_a
 	@projects = Project.paginate :page => params[:page], :per_page => params[:limit]
-	@dto = Hash.new
-	@dto[:total] = @projects.total_entries
-	@dto[:results] = @projects
 
     respond_to do |format|
-      format.json { render :layout => false,
-                           :json => @dto.to_json }
+      format.json { render :json => { :results => @projects,
+                                      :total => @projects.total_entries }
+                                    }
       format.html # index.html.erb
       format.xml  { render :xml => @projects }
       #format.ext_json { render :json => @projects.to_ext_json(:class => :project, :count => Project.count) }
