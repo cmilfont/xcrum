@@ -8,12 +8,30 @@ class ProjectsController < ApplicationController
     #@dto = DataTransferObject.new
     #@dto.total = Project.count
     #@dto.results = @projects.to_a
+
+
+
 	@projects = Project.paginate :page => params[:page], :per_page => params[:limit]
 
     respond_to do |format|
-      format.json { render :json => { :results => @projects,
-                                      :total => @projects.total_entries }
-                                    }
+      format.json {
+			render :json => {
+				:metaData => {
+					:totalProperty => 'total',
+					:root => 'results',
+					:id => 'id',
+					:fields => [
+						{:name => 'id', :mapping => 'id'},
+						{:name => 'name', :mapping => 'name'},
+						{:name => 'created_at', :mapping => 'created_at'},
+						{:name => 'updated_at', :mapping => 'updated_at'}
+					]
+				},
+				:results => @projects,
+				:total => @projects.total_entries
+			}
+
+       }
       format.html # index.html.erb
       format.xml  { render :xml => @projects }
       #format.ext_json { render :json => @projects.to_ext_json(:class => :project, :count => Project.count) }

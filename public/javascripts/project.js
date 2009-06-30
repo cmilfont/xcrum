@@ -13,19 +13,6 @@ Ext.override(Ext.PagingToolbar, {
 var Project = function() {
 
     Ext.Ajax.method = 'GET';
-
-    var store = new Ext.data.Store({
-                url: 'projects.json',
-                reader: new Ext.data.JsonReader({
-                    totalProperty:'total',
-                    root:'results',id:'id'
-                }, Ext.data.Record.create([
-                    {name:'id', mapping:'id'},
-                    {name:'name', mapping:'name'},
-                    {name:'created_at', mapping:'created_at'},
-                    {name:'updated_at', mapping:'updated_at'}
-                ]))
-            });
     var grid;
 
     var cadastrar = function() {
@@ -74,9 +61,10 @@ var Project = function() {
     return {
       init: function() {
 		console.log("teste " + grid_id);
-        grid = new Ext.grid.GridPanel({
-            renderTo:grid_id, autoShow:true, width:750,height:250,
-            store: store,
+        grid = new Ext.ux.grid.XcrumGrid({
+			title:'Projects',
+			url: 'projects.json',
+            grid_id: grid_id,
             columns: [
                 {id:'id', header: "id", width: 200, sortable: true, dataIndex: 'id'},
                 {header: "Nome", width: 120, sortable: true, dataIndex: 'name'},
@@ -88,24 +76,8 @@ var Project = function() {
                     return Date.parseDate(value, 'Y-m-d\\TH:i:s\\Z').format('d/m/Y H:i:s');
                     //2009-06-14T12:51:07Z
                 }, dataIndex: 'updated_at'}
-            ],
-            viewConfig: {forceFit: true},
-            sm: new Ext.grid.RowSelectionModel({singleSelect:true}),
-           frame:true,title:'Projects',iconCls:'icon-grid',
-            bbar: new Ext.PagingToolbar({
-                pageSize:5,store:store,displayInfo: true,
-                displayMsg: 'Exibindo o resultado: {0} a {1} de {2} registros',
-                emptyMsg: "Sem resultados a exibir",
-                items: ['-', {
-                    pressed: true,enableToggle: true,text: 'Cadastrar',cls: 'x-btn-text-icon details',toggleHandler: cadastrar
-                },{
-                    pressed: true,enableToggle: true,text: 'Alterar',cls: 'x-btn-text-icon details',toggleHandler: function(){}
-                }, {
-                    pressed: true,enableToggle: true,text: 'Excluir',cls: 'x-btn-text-icon details',toggleHandler: excluir
-                }]
-            })
+            ]
         });
-        store.load({params: {start: 0, limit: 5, page:1} });
       }
     };
 
